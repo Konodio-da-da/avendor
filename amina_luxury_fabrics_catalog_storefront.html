@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=inter:wght@100..900&family=plusJakartaSans:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "tertiary-fixed-dim": "#95d4ac", "on-background": "#131b2e", "surface-bright": "#faf8ff", "on-tertiary": "#ffffff", "inverse-surface": "#283044", "on-primary-container": "#f5fff7", "primary-fixed-dim": "#68dba9", "secondary-fixed": "#ffdbce", "surface-container-high": "#e2e7ff", "on-surface": "#131b2e", "on-error-container": "#93000a", "surface-variant": "#dae2fd", "surface-tint": "#006c4a", "surface-container-low": "#f2f3ff", "tertiary-container": "#44815d", "error": "#ba1a1a", "outline-variant": "#bccac0", "inverse-on-surface": "#eef0ff", "secondary-container": "#fd651e", "on-tertiary-fixed": "#002111", "on-secondary-container": "#571a00", "surface": "#faf8ff", "inverse-primary": "#68dba9", "surface-container": "#eaedff", "on-tertiary-fixed-variant": "#0f5132", "error-container": "#ffdad6", "on-secondary-fixed-variant": "#7f2b00", "tertiary-fixed": "#b0f1c7", "primary": "#006948", "on-error": "#ffffff", "secondary-fixed-dim": "#ffb599", "surface-container-highest": "#dae2fd", "on-secondary-fixed": "#370e00", "on-secondary": "#ffffff", "surface-dim": "#d2d9f4", "secondary": "#a73a00", "on-primary-fixed-variant": "#005137", "primary-fixed": "#85f8c4", "outline": "#6d7a72", "on-primary-fixed": "#002114", "on-tertiary-container": "#f6fff5", "tertiary": "#2a6746", "background": "#faf8ff", "primary-container": "#00855d", "surface-container-lowest": "#ffffff", "on-primary": "#ffffff", "on-surface-variant": "#3d4a42" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-3xl": "4.5rem", "gutter-mobile": "1rem", "space-2xl": "3rem", "margin-desktop": "3rem", "margin-mobile": "1.25rem", "space-xs": "0.5rem", "space-lg": "1.5rem", "space-md": "1rem", "gutter-desktop": "1.5rem", "space-xl": "2rem", "space-4xl": "6rem", "space-sm": "0.75rem", "space-2xs": "0.25rem" }, fontFamily: { "label-md": ["plusJakartaSans"], "headline-lg": ["plusJakartaSans"], "label-lg": ["plusJakartaSans"], "display-hero-mobile": ["plusJakartaSans"], "display-hero": ["plusJakartaSans"], "body-md": ["inter"], "headline-md": ["plusJakartaSans"], "headline-xl": ["plusJakartaSans"], "body-sm": ["inter"], "label-sm": ["plusJakartaSans"], "body-xl": ["inter"], "body-lg": ["inter"], "headline-xl-mobile": ["plusJakartaSans"], "headline-sm": ["plusJakartaSans"] }, fontSize: { "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "600" }], "headline-lg": ["30px", { lineHeight: "38px", letterSpacing: "-0.02em", fontWeight: "700" }], "label-lg": ["14px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "600" }], "display-hero-mobile": ["38px", { lineHeight: "46px", letterSpacing: "-0.02em", fontWeight: "800" }], "display-hero": ["56px", { lineHeight: "64px", letterSpacing: "-0.03em", fontWeight: "800" }], "body-md": ["14px", { lineHeight: "20px", letterSpacing: "0em", fontWeight: "400" }], "headline-md": ["22px", { lineHeight: "30px", letterSpacing: "-0.01em", fontWeight: "600" }], "headline-xl": ["40px", { lineHeight: "48px", letterSpacing: "-0.025em", fontWeight: "700" }], "body-sm": ["12px", { lineHeight: "18px", letterSpacing: "0.01em", fontWeight: "400" }], "label-sm": ["10px", { lineHeight: "14px", letterSpacing: "0.04em", fontWeight: "700" }], "body-xl": ["18px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "400" }], "body-lg": ["16px", { lineHeight: "24px", letterSpacing: "-0.005em", fontWeight: "400" }], "headline-xl-mobile": ["28px", { lineHeight: "36px", letterSpacing: "-0.02em", fontWeight: "700" }], "headline-sm": ["18px", { lineHeight: "26px", letterSpacing: "0em", fontWeight: "600" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface min-h-screen flex flex-col antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 w-full z-50 pt-safe"><div class="bg-primary text-on-primary px-margin-mobile py-space-2xs flex items-center justify-between text-center"><div class="flex items-center justify-center gap-space-xs mx-auto"><span class="material-symbols-outlined text-[14px] text-tertiary-fixed">verified_user</span><span class="font-label-sm text-label-sm tracking-wide font-medium">Secured by Escrow • Pay on Delivery Alternative</span></div></div><div class="h-20 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] px-margin-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0 flex-1"><img alt="Brand logo. - Primary color: #059669
+- Font: plusJakartaSans
+- Mode: light
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1VpFLvbYV0QWL4LVcgxT3zv43qF8a884Y4nFha62gGdDP_2AtwIKfYzGF8_s9-y3Oq7NGBUSpJNbjEfMzPTJrjMB_F8MMgzDLUZ5Zv_I-UN_ap5zd2JGe7UeGDnv2dilETWyBZcL4UP72hjxJirZOySCEoPFrWNlXZTf5TdcCvuaULmeOVA-8pkNt1vOMhx7jNENqfs6IjRy0EKoFzLGL7IshvnwHIKKe21Up5R3NVex2ENwFXClJZ2fdo"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-2xs"><span class="font-headline-sm text-headline-sm text-on-surface truncate font-bold">Amina Luxury Fabrics</span><span class="material-symbols-outlined text-primary text-[18px] shrink-0">verified</span></div><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Store Home</span></div></div><div class="flex items-center gap-space-xs shrink-0"><button aria-label="Share on WhatsApp" class="w-11 h-11 flex items-center justify-center rounded-full text-primary hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[22px]">share</span></button><button aria-label="Cart" class="relative w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="absolute top-1.5 right-1.5 bg-secondary text-on-secondary font-label-sm text-[10px] w-4 h-4 rounded-full flex items-center justify-center">3</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0 ml-space-2xs"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 w-full bg-surface pt-20 pb-space-4xl"><div class="flex flex-col w-full">
+<!-- Vendor Micro-Profile & Location Ribbon -->
+<section class="px-margin-mobile pt-space-xs pb-space-sm">
+<div class="flex items-center justify-between bg-surface-container-low rounded-xl px-space-sm py-space-xs shadow-sm">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0">storefront</span>
+<div class="flex items-center gap-1.5 min-w-0 text-on-surface-variant font-body-sm text-body-sm">
+<span class="truncate font-medium text-on-surface">Balogun Market, Lagos Island</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant shrink-0"></span>
+<span class="text-tertiary font-medium shrink-0">Open Now</span>
+</div>
+</div>
+<div class="flex items-center gap-1 shrink-0 bg-surface-container-highest px-space-xs py-0.5 rounded-full">
+<span class="material-symbols-outlined text-primary text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm text-on-surface font-bold">4.92</span>
+<span class="text-on-surface-variant font-body-sm text-[10px]">(320+)</span>
+</div>
+</div>
+</section>
+<!-- AI Natural Language & Voice Search Module -->
+<section class="px-margin-mobile pb-space-sm">
+<div class="bg-surface-container-lowest rounded-xl p-space-xs shadow-sm">
+<div class="flex items-center gap-space-xs bg-surface-container-low rounded-lg px-space-sm py-2">
+<div class="w-7 h-7 rounded-md bg-secondary-container/15 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-[18px]">auto_awesome</span>
+</div>
+<input class="w-full bg-transparent font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant/70 focus:outline-none min-w-0" id="ai-search-input" placeholder='Ask AI: "Find red silk wrap under ₦25k"...' type="text"/>
+<button aria-label="Voice Search in Pidgin or English" class="w-8 h-8 rounded-full flex items-center justify-center text-primary hover:bg-surface-container transition-colors shrink-0 active:scale-95" id="voice-mic-btn">
+<span class="material-symbols-outlined text-[20px]">mic</span>
+</button>
+</div>
+<!-- Quick AI Filter Triggers -->
+<div class="flex items-center gap-space-2xs overflow-x-auto pt-space-xs pb-0.5 no-scrollbar">
+<button class="suggestion-chip shrink-0 px-space-xs py-1 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[13px] text-secondary">flash_on</span>
+<span>Under ₦25,000</span>
+</button>
+<button class="suggestion-chip shrink-0 px-space-xs py-1 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1 active:scale-95 transition-transform">
+<span>👑 Owambe Elegance</span>
+</button>
+<button class="suggestion-chip shrink-0 px-space-xs py-1 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1 active:scale-95 transition-transform">
+<span>Office Silks</span>
+</button>
+<button class="suggestion-chip shrink-0 px-space-xs py-1 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1 active:scale-95 transition-transform">
+<span>Tiered Ankara</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Urgency & Fast Dispatch Ticker -->
+<section class="px-margin-mobile pb-space-sm">
+<div class="bg-primary/10 rounded-xl px-space-sm py-2 flex items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 animate-pulse">local_shipping</span>
+<p class="font-label-sm text-label-sm text-on-primary-fixed-variant truncate">
+<span class="font-bold">Same-Day Lagos Dispatch:</span> Gokada & Fez express active
+        </p>
+</div>
+<div class="shrink-0 flex items-center gap-0.5 bg-surface-container-lowest px-2 py-0.5 rounded-full shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span>
+<span class="font-label-sm text-[10px] text-primary font-bold ml-1">CBN ESCROW</span>
+</div>
+</div>
+</section>
+<!-- Horizontal Scrolling Category Chips -->
+<section class="pb-space-sm">
+<div aria-label="Product Categories" class="flex items-center gap-space-xs overflow-x-auto px-margin-mobile no-scrollbar" role="tablist">
+<button class="cat-pill shrink-0 px-space-sm py-1.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm shadow-sm transition-all" data-cat="all">
+        All (42)
+      </button>
+<button class="cat-pill shrink-0 px-space-sm py-1.5 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-label-sm text-label-sm transition-all" data-cat="new">
+        New Arrivals
+      </button>
+<button class="cat-pill shrink-0 px-space-sm py-1.5 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-label-sm text-label-sm transition-all" data-cat="silk">
+        Silk Wraps
+      </button>
+<button class="cat-pill shrink-0 px-space-sm py-1.5 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-label-sm text-label-sm transition-all" data-cat="ankara">
+        Ankara Prints
+      </button>
+<button class="cat-pill shrink-0 px-space-sm py-1.5 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-label-sm text-label-sm transition-all" data-cat="lace">
+        Luxury Lace
+      </button>
+<button class="cat-pill shrink-0 px-space-sm py-1.5 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-label-sm text-label-sm transition-all" data-cat="clearance">
+        Clearance 🏷️
+      </button>
+</div>
+</section>
+<!-- Product Catalog Grid: 2 Columns on Mobile -->
+<section class="px-margin-mobile pb-space-lg">
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-baseline gap-space-xs">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Curated Catalog</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant">4 curated pieces</span>
+</div>
+<div class="flex items-center gap-1 text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+<span>Filter</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-sm" id="product-grid">
+<!-- Item 1: Emerald Silk Wrap Dress -->
+<article class="product-card flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<div class="relative w-full aspect-[4/5] bg-surface-container-low overflow-hidden">
+<img alt="Emerald Silk Wrap Dress on mannequin" class="w-full h-full object-cover object-center transition-transform duration-300 hover:scale-105" loading="lazy" src="https://lh3.googleusercontent.com/aida/AEtjO1Vj6bhulsfCVTSsagGBd499rCHQKYukkal9Ubw0TrZHXuNX7RMUPvmrJcXAR8e25L0w6MfhcnuiB0yokvEMQBF9kwb9ANd89p0GlMAv-Z5Q1peWCsOVXUt1sNkn9TKYK_5ZJksK_q0Eruz8rHDh-WLsZA0mwOFhVdKIqzZUWYdf2g2_M4UfqwfZ-TXg3wfs64gyFwpur2hQFDvBIeztZ1KQhNKPiwACIP98YtpwFQeZ1CYh4Kr4hTK_zw"/>
+<div class="absolute top-2 left-2 flex flex-col gap-1">
+<span class="px-2 py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-[10px] font-bold shadow-sm">
+              🔥 Fast Selling
+            </span>
+<span class="px-1.5 py-0.5 rounded bg-surface/90 backdrop-blur-md text-primary font-label-sm text-[9px] font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[10px]">arrow_back_ios_new</span> AI Cleaned
+            </span>
+</div>
+<button aria-label="Save to Wishlist" class="wishlist-btn absolute top-2 right-2 w-7 h-7 rounded-full bg-surface/80 backdrop-blur-sm flex items-center justify-center text-on-surface hover:text-error transition-colors">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+</button>
+</div>
+<div class="p-space-xs flex flex-col flex-1 justify-between gap-space-2xs">
+<div>
+<div class="flex items-center gap-1 mb-0.5">
+<div class="flex text-amber-500">
+<span class="material-symbols-outlined text-[12px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-sm text-[10px] font-semibold text-on-surface">4.9</span>
+<span class="text-on-surface-variant font-body-sm text-[10px]">(48)</span>
+</div>
+<h3 class="font-label-lg text-label-md text-on-surface font-semibold line-clamp-1">Emerald Silk Wrap Dress</h3>
+<p class="font-body-sm text-[11px] text-on-surface-variant">Pure Mulberry Satin • Gold Trim</p>
+</div>
+<div class="pt-1 flex items-end justify-between gap-1">
+<div class="flex flex-col">
+<span class="font-label-sm text-[10px] text-on-surface-variant line-through">₦32,000</span>
+<span class="font-headline-sm text-label-lg font-bold text-primary">₦24,500</span>
+</div>
+<button aria-label="Add Emerald Silk Dress to Cart" class="add-cart-btn w-8 h-8 rounded-lg bg-secondary-container text-on-primary flex items-center justify-center shadow-sm active:scale-90 transition-transform" data-item="Emerald Silk Wrap Dress" data-price="24500">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Item 2: Crimson Red Silk Wrap Dress -->
+<article class="product-card flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<div class="relative w-full aspect-[4/5] bg-surface-container-low overflow-hidden">
+<img alt="Crimson Red Silk Wrap Dress on mannequin" class="w-full h-full object-cover object-center transition-transform duration-300 hover:scale-105" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWr5f_OVFfBPdL0vYqUUEElQAU3pTfmf10H9bZMjTthYoKWdtME08BL10UWYUXFNSTgIMXmKWahi8txJ-j8fRxqus-xFCHCS8H5ij2j4iIdZG5r6VCHD_SFqiEjHzrx9GUjX1xd5UpSopkYODQYK1ouUFa3_mNcpuZvwuWqovZr-SnF7hUI8wve06JeW1XOdbgQE2N35abLt6kWT6W_Ov6XW103IwOqoX3UGY4czb6jlzCd9rn7GNe"/>
+<div class="absolute top-2 left-2 flex flex-col gap-1">
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-[10px] font-bold shadow-sm">
+              Only 2 Left
+            </span>
+<span class="px-1.5 py-0.5 rounded bg-surface/90 backdrop-blur-md text-primary font-label-sm text-[9px] font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[10px]">auto_fix_high</span> High Silk
+            </span>
+</div>
+<button aria-label="Save to Wishlist" class="wishlist-btn absolute top-2 right-2 w-7 h-7 rounded-full bg-surface/80 backdrop-blur-sm flex items-center justify-center text-on-surface hover:text-error transition-colors">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+</button>
+</div>
+<div class="p-space-xs flex flex-col flex-1 justify-between gap-space-2xs">
+<div>
+<div class="flex items-center gap-1 mb-0.5">
+<div class="flex text-amber-500">
+<span class="material-symbols-outlined text-[12px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-sm text-[10px] font-semibold text-on-surface">5.0</span>
+<span class="text-on-surface-variant font-body-sm text-[10px]">(19)</span>
+</div>
+<h3 class="font-label-lg text-label-md text-on-surface font-semibold line-clamp-1">Crimson Silk Wrap Dress</h3>
+<p class="font-body-sm text-[11px] text-on-surface-variant">Embroidered Cuffs • V-Neck</p>
+</div>
+<div class="pt-1 flex items-end justify-between gap-1">
+<div class="flex flex-col">
+<span class="font-label-sm text-[10px] text-tertiary">Verified Authentic</span>
+<span class="font-headline-sm text-label-lg font-bold text-primary">₦26,000</span>
+</div>
+<button aria-label="Add Crimson Red Dress to Cart" class="add-cart-btn w-8 h-8 rounded-lg bg-secondary-container text-on-primary flex items-center justify-center shadow-sm active:scale-90 transition-transform" data-item="Crimson Red Silk Wrap Dress" data-price="26000">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Item 3: Champagne Gold Beaded Lace Gown -->
+<article class="product-card flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<div class="relative w-full aspect-[4/5] bg-surface-container-low overflow-hidden">
+<img alt="Champagne Gold Beaded Lace Gown" class="w-full h-full object-cover object-center transition-transform duration-300 hover:scale-105" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_UyrmP0pkA2Nto8IWn0UKyHUVb3DhSaaSNuVoVE4b4ISIzW0yq7r8kom_DVUsp7fOKD9Z9w54Ur8O146LDnRKlJOpjQ7eA60j9323eVqqpnjGJcEHiaSimqxIILoUaS1kQQ494i07-CUmCUEp6OMXrAhhqjZy5wCdHZKfg_5mNLTR3rWcVcSDAYgDmxOaWDnoy1IqjQSk-lBlg_rk8B98ZfQE3mPhBUitrOH-_WrfTCWLlmmtXidH"/>
+<div class="absolute top-2 left-2 flex flex-col gap-1">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-primary font-label-sm text-[10px] font-bold shadow-sm">
+              👑 Luxury Owambe
+            </span>
+</div>
+<button aria-label="Save to Wishlist" class="wishlist-btn absolute top-2 right-2 w-7 h-7 rounded-full bg-surface/80 backdrop-blur-sm flex items-center justify-center text-on-surface hover:text-error transition-colors">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+</button>
+</div>
+<div class="p-space-xs flex flex-col flex-1 justify-between gap-space-2xs">
+<div>
+<div class="flex items-center gap-1 mb-0.5">
+<div class="flex text-amber-500">
+<span class="material-symbols-outlined text-[12px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-sm text-[10px] font-semibold text-on-surface">4.9</span>
+<span class="text-on-surface-variant font-body-sm text-[10px]">(34)</span>
+</div>
+<h3 class="font-label-lg text-label-md text-on-surface font-semibold line-clamp-1">Champagne Beaded Gown</h3>
+<p class="font-body-sm text-[11px] text-on-surface-variant">Swarovski Sequins • Net Silhouette</p>
+</div>
+<div class="pt-1 flex items-end justify-between gap-1">
+<div class="flex flex-col">
+<span class="font-label-sm text-[10px] text-tertiary">Exclusive Piece</span>
+<span class="font-headline-sm text-label-lg font-bold text-primary">₦45,000</span>
+</div>
+<button aria-label="Add Champagne Gold Gown to Cart" class="add-cart-btn w-8 h-8 rounded-lg bg-secondary-container text-on-primary flex items-center justify-center shadow-sm active:scale-90 transition-transform" data-item="Champagne Gold Beaded Lace Gown" data-price="45000">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Item 4: Royal Blue & Yellow Tiered Ankara Midi -->
+<article class="product-card flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<div class="relative w-full aspect-[4/5] bg-surface-container-low overflow-hidden">
+<img alt="Royal Blue and Yellow Tiered Ankara Midi Dress" class="w-full h-full object-cover object-center transition-transform duration-300 hover:scale-105" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaxMdFsw49-0dy1gzNCqLi6PRIlO5AEdil2sumHGFzZqo2bdj4HutnXs6SSrM6CpZ226r6P-YfbnR0qj3iJQHPNzA2bt8OoMNAPmdwkuJnW6uhZXoVaq972VBtrNEcbMzQWlNGmxzbAIG3ppSIn8XURPgjh0C_HaeO54Q8laA-OTrENjq4aD_bXY6FTFe9DUlt2IdiJztza1-ukO2z3iGhY3MvH2vHAtYhWJBJVMzvyVDuPJJOkdch"/>
+<div class="absolute top-2 left-2 flex flex-col gap-1">
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-[10px] font-bold shadow-sm">
+              New In
+            </span>
+</div>
+<button aria-label="Save to Wishlist" class="wishlist-btn absolute top-2 right-2 w-7 h-7 rounded-full bg-surface/80 backdrop-blur-sm flex items-center justify-center text-on-surface hover:text-error transition-colors">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+</button>
+</div>
+<div class="p-space-xs flex flex-col flex-1 justify-between gap-space-2xs">
+<div>
+<div class="flex items-center gap-1 mb-0.5">
+<div class="flex text-amber-500">
+<span class="material-symbols-outlined text-[12px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-sm text-[10px] font-semibold text-on-surface">4.8</span>
+<span class="text-on-surface-variant font-body-sm text-[10px]">(52)</span>
+</div>
+<h3 class="font-label-lg text-label-md text-on-surface font-semibold line-clamp-1">Tiered Ankara Midi</h3>
+<p class="font-body-sm text-[11px] text-on-surface-variant">100% Cotton Wax • Puff Sleeves</p>
+</div>
+<div class="pt-1 flex items-end justify-between gap-1">
+<div class="flex flex-col">
+<span class="font-label-sm text-[10px] text-on-surface-variant line-through">₦22,000</span>
+<span class="font-headline-sm text-label-lg font-bold text-primary">₦18,500</span>
+</div>
+<button aria-label="Add Tiered Ankara Midi to Cart" class="add-cart-btn w-8 h-8 rounded-lg bg-secondary-container text-on-primary flex items-center justify-center shadow-sm active:scale-90 transition-transform" data-item="Royal Blue & Yellow Tiered Ankara Midi" data-price="18500">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- WhatsApp Instant Order Concierge Strip -->
+<section class="px-margin-mobile pb-space-lg">
+<div class="bg-surface-container-low rounded-xl p-space-sm shadow-sm flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs min-w-0">
+<div class="w-10 h-10 rounded-full bg-primary/15 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[24px]">chat</span>
+</div>
+<div class="min-w-0">
+<h4 class="font-label-lg text-label-lg text-on-surface font-semibold truncate">Prefer ordering on WhatsApp?</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Chat directly with Amina's sales desk</p>
+</div>
+</div>
+<a class="shrink-0 px-space-sm py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md flex items-center gap-1 shadow-sm active:scale-95 transition-transform" href="https://wa.me/2348000000000?text=Hello%20Amina%20Luxury%20Fabrics%2C%20I%20want%20to%20inquire%20about%20your%20collection" rel="noopener" target="_blank">
+<span>Chat</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</section>
+<!-- Escrow Security & Institutional Rails Reassurance Footer -->
+<section class="px-margin-mobile pb-space-lg">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center gap-space-xs mb-space-xs">
+<div class="w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed shrink-0">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</div>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface font-bold">Safe & Protected Delivery</h4>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold">Nigerian Consumer Protection Shield</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">
+        Your payment remains securely locked with licensed escrow rails. Inspect your fabric upon arrival. Only release funds via your 4-digit secret OTP once satisfied.
+      </p>
+<!-- Trust Badges Strip -->
+<div class="flex items-center justify-between pt-space-xs border-t border-surface-container-high/60">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-primary text-[16px]">lock</span>
+<span class="font-label-sm text-[11px] font-semibold text-on-surface">Paystack Direct</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-primary text-[16px]">account_balance</span>
+<span class="font-label-sm text-[11px] font-semibold text-on-surface">Monnify Transfer</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-primary text-[16px]">security</span>
+<span class="font-label-sm text-[11px] font-semibold text-on-surface">CBN Protected</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Sticky Floating AI Assistant Pill Button -->
+<div class="fixed bottom-20 right-4 z-40">
+<button aria-label="Open Amina AI Personal Stylist" class="flex items-center gap-2 bg-inverse-surface text-inverse-on-surface px-3.5 py-2.5 rounded-full shadow-lg hover:shadow-xl active:scale-95 transition-all" id="floating-stylist-fab">
+<div class="relative w-6 h-6 rounded-full bg-secondary-container flex items-center justify-center text-on-primary shrink-0">
+<span class="material-symbols-outlined text-[16px]">auto_awesome</span>
+<span class="absolute -top-0.5 -right-0.5 w-2 h-2 rounded-full bg-primary-fixed ring-2 ring-inverse-surface animate-pulse"></span>
+</div>
+<span class="font-label-md text-label-md font-semibold tracking-tight">Ask Stylist</span>
+</button>
+</div>
+<!-- Toast Notification Container for Micro-delight Feedback -->
+<div class="fixed top-24 left-1/2 -translate-x-1/2 z-50 transition-all duration-300 pointer-events-none opacity-0 translate-y-2" id="toast-notify">
+<div class="bg-inverse-surface text-inverse-on-surface px-space-md py-space-xs rounded-full shadow-xl flex items-center gap-2 font-label-md text-label-md">
+<span class="material-symbols-outlined text-primary-fixed text-[18px]">check_circle</span>
+<span id="toast-text">Added to Cart!</span>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    // Quick Add to Cart with Micro-Delight Toast
+    const cartButtons = document.querySelectorAll('.add-cart-btn');
+    const toast = document.getElementById('toast-notify');
+    const toastText = document.getElementById('toast-text');
+    let toastTimeout;
+
+    function showToast(message) {
+      if (!toast) return;
+      toastText.textContent = message;
+      toast.classList.remove('opacity-0', 'translate-y-2');
+      toast.classList.add('opacity-100', 'translate-y-0');
+      clearTimeout(toastTimeout);
+      toastTimeout = setTimeout(() => {
+        toast.classList.remove('opacity-100', 'translate-y-0');
+        toast.classList.add('opacity-0', 'translate-y-2');
+      }, 2200);
+    }
+
+    cartButtons.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const itemName = btn.getAttribute('data-item') || 'Item';
+        showToast('Added ' + itemName + ' to bag');
+        
+        // Dynamic animation on button
+        btn.classList.add('scale-75');
+        setTimeout(() => btn.classList.remove('scale-75'), 180);
+      });
+    });
+
+    // Wishlist Toggle
+    const wishlistButtons = document.querySelectorAll('.wishlist-btn');
+    wishlistButtons.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const icon = btn.querySelector('.material-symbols-outlined');
+        const isFavorited = icon.style.fontVariationSettings.includes("'FILL' 1");
+        if (isFavorited) {
+          icon.style.fontVariationSettings = "'FILL' 0";
+          btn.classList.remove('text-error');
+        } else {
+          icon.style.fontVariationSettings = "'FILL' 1";
+          btn.classList.add('text-error');
+          showToast('Saved to your favorites');
+        }
+      });
+    });
+
+    // Suggestion Chips Click to Search
+    const searchInput = document.getElementById('ai-search-input');
+    const suggestionChips = document.querySelectorAll('.suggestion-chip');
+    suggestionChips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        const text = chip.innerText.replace(/[^\w\s₦]/gi, '').trim();
+        if (searchInput) {
+          searchInput.value = text;
+          showToast('Filtering for: ' + text);
+        }
+      });
+    });
+
+    // Category Pills State
+    const catPills = document.querySelectorAll('.cat-pill');
+    catPills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        catPills.forEach(p => {
+          p.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+          p.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+        });
+        pill.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+        pill.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+      });
+    });
+
+    // Mic Voice Trigger
+    const micBtn = document.getElementById('voice-mic-btn');
+    if (micBtn) {
+      micBtn.addEventListener('click', () => {
+        micBtn.classList.toggle('text-error');
+        showToast('Listening in Pidgin / English...');
+      });
+    }
+
+    // Floating Stylist Trigger
+    const stylistFab = document.getElementById('floating-stylist-fab');
+    if (stylistFab) {
+      stylistFab.addEventListener('click', () => {
+        showToast('Amina AI Stylist: "Kedu! What look are we planning?"');
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-4px_16px_rgba(0,0,0,0.04)]" data-active-classes="text-primary font-bold"><div class="flex items-center justify-around h-16 px-space-xs relative"><a aria-current="page" class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] min-h-[44px] transition-colors text-primary font-bold" data-path="store-home" href="#"><span class="material-symbols-outlined text-[22px]">storefront</span><span class="font-label-sm text-label-sm">Home</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] min-h-[44px] text-on-surface-variant transition-colors" data-path="categories" href="#"><span class="material-symbols-outlined text-[22px]">category</span><span class="font-label-sm text-label-sm">Categories</span></a><div class="flex flex-col items-center justify-center -mt-5"><a class="w-12 h-12 rounded-full bg-secondary-container text-on-primary flex items-center justify-center shadow-[0_4px_12px_rgba(253,101,30,0.35)] active:scale-95 transition-transform" data-path="ai-stylist" href="#"><span class="material-symbols-outlined text-[24px]">auto_awesome</span></a><span class="font-label-sm text-label-sm text-secondary font-semibold mt-1">AI Assistant</span></div><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] min-h-[44px] text-on-surface-variant transition-colors" data-path="track-order" href="#"><span class="material-symbols-outlined text-[22px]">local_shipping</span><span class="font-label-sm text-label-sm">Track Order</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] min-h-[44px] text-on-surface-variant transition-colors" data-path="merchant-profile" href="#"><span class="material-symbols-outlined text-[22px]">shield_person</span><span class="font-label-sm text-label-sm">Trust Info</span></a></div></nav></body></html>

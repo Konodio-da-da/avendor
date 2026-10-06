@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"tertiary-container":"#b090ff","tertiary-fixed":"#e9ddff","background":"#0b0f19","inverse-primary":"#006c49","error":"#ffb4ab","secondary-fixed-dim":"#adc6ff","primary-fixed-dim":"#4edea3","surface-container-high":"#262a34","outline":"#86948a","on-primary-container":"#00422b","secondary":"#adc6ff","inverse-surface":"#dfe2ef","secondary-container":"#0566d9","on-secondary-container":"#e6ecff","primary":"#4edea3","tertiary-fixed-dim":"#d0bcff","tertiary":"#d0bcff","primary-container":"#10b981","surface-variant":"#31353f","secondary-fixed":"#d8e2ff","on-primary-fixed":"#002113","on-surface-variant":"#94a3b8","inverse-on-surface":"#2c303a","surface-tint":"#4edea3","on-tertiary":"#3c0091","on-secondary":"#002e6a","surface-container":"#1c1f29","on-tertiary-fixed-variant":"#5516be","primary-fixed":"#6ffbbe","surface-container-low":"#181b25","on-primary":"#003824","error-container":"#93000a","surface-bright":"#353943","on-secondary-fixed":"#001a42","surface-container-highest":"#31353f","surface":"#0f131c","on-tertiary-container":"#4600a7","on-secondary-fixed-variant":"#004395","surface-container-lowest":"#0a0e17","on-background":"#dfe2ef","on-primary-fixed-variant":"#005236","outline-variant":"#3c4a42","on-tertiary-fixed":"#23005c","surface-dim":"#0f131c","on-error-container":"#ffdad6","on-error":"#690005","on-surface":"#f1f5f9"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-xl":"2rem","space-sm":"0.75rem","margin-desktop":"3rem","space-3xl":"4rem","gutter-desktop":"1.5rem","space-xs":"0.5rem","space-md":"1rem","space-2xl":"3rem","margin-mobile":"1rem","space-2xs":"0.25rem","gutter-mobile":"1rem","margin-tablet":"2rem","space-lg":"1.5rem"},fontFamily:{"body-md":["Plus Jakarta Sans","sans-serif"],"body-lg":["Plus Jakarta Sans","sans-serif"],"headline-lg":["Plus Jakarta Sans","sans-serif"],"headline-lg-mobile":["Plus Jakarta Sans","sans-serif"],"display-hero-mobile":["Plus Jakarta Sans","sans-serif"],"display-hero":["Plus Jakarta Sans","sans-serif"],"label-code":["JetBrains Mono","monospace"],"body-sm":["Plus Jakarta Sans","sans-serif"],"headline-md":["Plus Jakarta Sans","sans-serif"],"title-md":["Plus Jakarta Sans","sans-serif"],"label-badge":["Plus Jakarta Sans","sans-serif"],"headline-sm":["Plus Jakarta Sans","sans-serif"]},fontSize:{"body-md":["15px",{lineHeight:"24px",letterSpacing:"0em",fontWeight:"400"}],"body-lg":["18px",{lineHeight:"28px",letterSpacing:"-0.005em",fontWeight:"400"}],"headline-lg":["40px",{lineHeight:"48px",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-lg-mobile":["28px",{lineHeight:"36px",letterSpacing:"-0.01em",fontWeight:"600"}],"display-hero-mobile":["36px",{lineHeight:"44px",letterSpacing:"-0.02em",fontWeight:"700"}],"display-hero":["56px",{lineHeight:"64px",letterSpacing:"-0.03em",fontWeight:"700"}],"label-code":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"500"}],"body-sm":["13px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"400"}],"headline-md":["28px",{lineHeight:"36px",letterSpacing:"-0.015em",fontWeight:"600"}],"title-md":["16px",{lineHeight:"24px",letterSpacing:"0em",fontWeight:"600"}],"label-badge":["11px",{lineHeight:"14px",letterSpacing:"0.05em",fontWeight:"600"}],"headline-sm":["20px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"600"}]}}}};</script></head><body class="bg-[#0b0f19] font-body-md text-slate-200 antialiased min-h-screen relative selection:bg-emerald-500/30 selection:text-emerald-300">
+<!-- Ambient Radial Luminous Glow Orbs -->
+<div class="fixed inset-0 pointer-events-none -z-10 overflow-hidden">
+<div class="absolute -top-[15%] left-1/2 -translate-x-1/2 w-[1000px] h-[650px] bg-gradient-to-b from-emerald-500/20 via-teal-500/10 to-transparent blur-[140px] opacity-80"></div>
+<div class="absolute top-[30%] -left-[10%] w-[650px] h-[650px] bg-emerald-600/15 rounded-full blur-[150px] opacity-60"></div>
+<div class="absolute top-[45%] right-[-5%] w-[600px] h-[600px] bg-cyan-500/10 rounded-full blur-[140px] opacity-60"></div>
+<div class="absolute top-[65%] -left-[5%] w-[550px] h-[550px] bg-indigo-500/15 rounded-full blur-[160px] opacity-50"></div>
+<div class="absolute top-[80%] right-[10%] w-[700px] h-[700px] bg-emerald-500/15 rounded-full blur-[150px] opacity-70"></div>
+</div>
+<!-- Header (Frosted Glass Panel) -->
+<header class="fixed top-0 w-full z-50 bg-[#0b0f19]/70 backdrop-blur-2xl border-b border-white/[0.08] shadow-[0_4px_30px_rgba(0,0,0,0.5)] transition-all">
+<div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm shrink-0">
+<div class="p-1.5 rounded-xl bg-white/[0.04] border border-white/[0.1] shadow-inner backdrop-blur-md">
+<img alt="AI Vendor Hub Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VpFLvbYV0QWL4LVcgxT3zv43qF8a884Y4nFha62gGdDP_2AtwIKfYzGF8_s9-y3Oq7NGBUSpJNbjEfMzPTJrjMB_F8MMgzDLUZ5Zv_I-UN_ap5zd2JGe7UeGDnv2dilETWyBZcL4UP72hjxJirZOySCEoPFrWNlXZTf5TdcCvuaULmeOVA-8pkNt1vOMhx7jNENqfs6IjRy0EKoFzLGL7IshvnwHIKKe21Up5R3NVex2ENwFXClJZ2fdo"/>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-white font-bold leading-none tracking-tight">AI Vendor Hub</span>
+<span class="font-label-badge text-[10px] text-emerald-400 font-semibold tracking-wider uppercase mt-1">Nigeria SMEs &amp; Commerce</span>
+</div>
+</div>
+<nav class="hidden xl:flex items-center gap-2" data-active-classes="bg-emerald-500/15 text-emerald-300 font-semibold border border-emerald-500/30">
+<a aria-current="page" class="px-3.5 py-1.5 rounded-xl transition-all bg-emerald-500/15 text-emerald-300 font-semibold border border-emerald-500/30 shadow-[0_0_15px_rgba(16,185,129,0.15)] text-sm" data-path="features" href="#">Features (10 AI Tools)</a>
+<a class="text-sm font-medium text-slate-300 hover:text-white hover:bg-white/[0.06] px-3.5 py-1.5 rounded-xl transition-all" data-path="escrow-and-trust" href="#escrow-and-trust">Escrow &amp; Trust</a>
+<a class="text-sm font-medium text-slate-300 hover:text-white hover:bg-white/[0.06] px-3.5 py-1.5 rounded-xl transition-all" data-path="logistics-integration" href="#logistics-integration">Logistics</a>
+<a class="text-sm font-medium text-slate-300 hover:text-white hover:bg-white/[0.06] px-3.5 py-1.5 rounded-xl transition-all" data-path="pricing-plans" href="#pricing">Pricing</a>
+</nav>
+<div class="flex items-center gap-3 shrink-0">
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/[0.05] hover:bg-white/[0.1] border border-white/[0.1] text-slate-200 text-xs font-semibold backdrop-blur-md transition-all" type="button">
+<span class="material-symbols-outlined text-sm text-emerald-400">translate</span>
+<span>Pidgin / Eng 🇳🇬</span>
+</button>
+<a class="hidden sm:inline-flex items-center justify-center px-4 py-2 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-400 text-[#002113] font-bold text-sm shadow-[0_0_20px_rgba(16,185,129,0.35)] hover:shadow-[0_0_28px_rgba(16,185,129,0.55)] hover:scale-[1.02] border-t border-white/40 transition-all" data-path="get-started" href="#pricing">Get Started Free</a>
+<div class="relative p-0.5 rounded-full bg-gradient-to-tr from-emerald-400 to-cyan-400">
+<img alt="Profile" class="w-8 h-8 rounded-full object-cover border border-[#0b0f19]" src="https://lh3.googleusercontent.com/aida/AEtjO1W6HlrA-hJKtwEqrNwVaNDbczuapbNthput_SW1cOlrkgUoiNu-Orl8ghhKZJVt4sZxINKA7rMMM-0K9NhVi4zHLqjGVmpjdVfL91oxq1zjhq6UJ_RhkOQW8y9H5UCQStd8XvyiL2rs6-XJeEDvbW5G31no5G9WQBa6Q7oV6Gs-mkEkCEDFv49bd367o_BsglebsCM3NmqBaKlMoHefICRhh0c5_LZElGHxqm2D2gqs9iUcovWay8hKlUs"/>
+</div>
+</div>
+</div>
+</header>
+<main class="w-full pt-20 bg-transparent min-h-screen">
+<div class="flex flex-col w-full">
+<!-- Top Ambient Glow & Decorative Backdrop Hero -->
+<section class="relative w-full overflow-hidden px-6 lg:px-12 pt-12 pb-16 lg:pb-24">
+<div class="max-w-7xl mx-auto flex flex-col items-center text-center relative z-10">
+<!-- Top Badge -->
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-400/30 text-emerald-300 backdrop-blur-md shadow-[0_0_20px_rgba(16,185,129,0.15)] mb-6">
+<span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+<span class="w-2 h-2 rounded-full bg-emerald-400 -ml-4"></span>
+<span class="text-xs text-emerald-300 font-bold">🇳🇬 Built for Nigerian Hustlers</span>
+<span class="text-white/20 text-xs">•</span>
+<span class="text-xs text-slate-300 font-medium">100% Free Store Setup</span>
+</div>
+<!-- Main Heading -->
+<h1 class="font-display-hero text-4xl sm:text-5xl lg:text-display-hero max-w-4xl tracking-tight text-white font-extrabold mb-6 leading-tight">
+      Turn Your Hustle Into a Brand. <br class="hidden sm:inline"/>
+<span class="bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400 bg-clip-text text-transparent">Meet Your AI Co-Pilot.</span>
+</h1>
+<!-- Subtitle -->
+<p class="font-body-lg text-lg text-slate-300 max-w-2xl mb-8 leading-relaxed">
+      AI Vendor Hub equips local Nigerian sellers with tools to sell smarter, not harder. Turn chaotic WhatsApp DMs into automated sales, instant escrow payouts, and same-day bike dispatch.
+    </p>
+<!-- Primary & Secondary CTA Buttons -->
+<div class="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto mb-10">
+<a class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-400 text-[#002113] font-bold text-base shadow-[0_0_30px_rgba(16,185,129,0.4)] hover:shadow-[0_0_40px_rgba(16,185,129,0.6)] hover:scale-[1.02] border-t border-white/40 transition-all flex items-center justify-center gap-2 group" href="#pricing">
+<span>Create Your AI Store in 1 Minute</span>
+<span class="material-symbols-outlined text-xl transition-transform group-hover:translate-x-1 font-bold">bolt</span>
+</a>
+<button class="w-full sm:w-auto px-6 py-4 rounded-xl backdrop-blur-xl bg-white/[0.06] hover:bg-white/[0.12] border border-white/[0.15] border-t-white/[0.25] text-white font-semibold text-sm shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] transition-all flex items-center justify-center gap-2" onclick="playVoiceSample()" type="button">
+<span class="material-symbols-outlined text-emerald-400 text-xl">play_circle</span>
+<span id="voiceBtnText">Listen to Pidgin Voice Demo 🎧</span>
+</button>
+</div>
+<p class="text-xs text-slate-400 -mt-4 mb-12 flex items-center flex-wrap justify-center gap-2 sm:gap-3">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-emerald-400 text-sm">check_circle</span> No coding</span>
+<span class="text-white/20">•</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-emerald-400 text-sm">check_circle</span> No card needed</span>
+<span class="text-white/20">•</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-emerald-400 text-sm">check_circle</span> Settles into any Nigerian bank (GTB, Kuda, OPay)</span>
+</p>
+<!-- Social Proof Metrics Bar (Glassmorphic Strip) -->
+<div class="w-full max-w-4xl p-5 sm:p-6 rounded-2xl backdrop-blur-xl bg-white/[0.04] border border-white/[0.12] border-t-white/[0.22] shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] mb-16 grid grid-cols-2 md:grid-cols-4 gap-4 text-left items-center">
+<div class="px-3 border-r border-white/[0.08] last:border-none">
+<span class="text-[11px] uppercase tracking-wider text-slate-400 font-semibold block">Vendor Network</span>
+<span class="text-2xl text-white font-extrabold tracking-tight">14,200+</span>
+<span class="text-xs text-emerald-400 block mt-0.5 font-medium">Balogun, Aba, Yaba</span>
+</div>
+<div class="px-3 md:border-r border-white/[0.08]">
+<span class="text-[11px] uppercase tracking-wider text-slate-400 font-semibold block">GMV Handled</span>
+<span class="text-2xl text-emerald-400 font-extrabold tracking-tight">₦2.4B+</span>
+<span class="text-xs text-slate-400 block mt-0.5 font-medium">Zero escrow defaults</span>
+</div>
+<div class="px-3 border-r border-white/[0.08] last:border-none">
+<span class="text-[11px] uppercase tracking-wider text-slate-400 font-semibold block">Delivery SLA</span>
+<span class="text-2xl text-cyan-400 font-extrabold tracking-tight">99.4%</span>
+<span class="text-xs text-slate-400 block mt-0.5 font-medium">Real-time rider OTP</span>
+</div>
+<div class="px-3">
+<span class="text-[11px] uppercase tracking-wider text-slate-400 font-semibold block">Store Launch</span>
+<span class="text-2xl text-white font-extrabold tracking-tight">0 Naira</span>
+<span class="text-xs text-teal-300 block mt-0.5 font-medium">Free forever starter</span>
+</div>
+</div>
+<!-- Hero Visual Dual-Mockup (WhatsApp Order -> Branded AI Store Link) -->
+<div class="w-full max-w-5xl rounded-3xl backdrop-blur-2xl bg-white/[0.03] border border-white/[0.12] border-t-white/[0.25] p-5 sm:p-8 shadow-[0_16px_48px_0_rgba(0,0,0,0.5)] relative overflow-hidden">
+<div class="absolute top-0 right-0 w-80 h-80 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+<!-- Left: Simulated WhatsApp Inbound -->
+<div class="lg:col-span-5 backdrop-blur-xl bg-white/[0.04] border border-white/[0.1] rounded-2xl p-5 shadow-lg text-left flex flex-col gap-3 relative">
+<div class="flex items-center justify-between pb-3 border-b border-white/[0.08]">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-emerald-500/20 border border-emerald-400/40 flex items-center justify-center text-emerald-300 font-bold text-xs">KD</div>
+<div>
+<h4 class="text-xs text-white font-semibold">Kemi (Instagram DM Buyer)</h4>
+<p class="text-[10px] text-emerald-400 font-medium flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> online now
+                </p>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-white/[0.06] text-slate-300 border border-white/[0.08] text-[10px] font-semibold">WhatsApp AI Bot</span>
+</div>
+<div class="space-y-2.5">
+<div class="bg-white/[0.04] border border-white/[0.08] p-3 rounded-2xl rounded-tl-xs max-w-[85%]">
+<p class="text-xs text-slate-200">Hello sis! Is the emerald silk wrap dress available in size 12? How much is dispatch to Lekki Phase 1?</p>
+<span class="text-[9px] text-slate-400 text-right block mt-1">11:42 AM</span>
+</div>
+<div class="bg-emerald-500/15 border border-emerald-400/30 p-3 rounded-2xl rounded-tr-xs max-w-[92%] ml-auto text-slate-100">
+<div class="flex items-center gap-1.5 mb-1 text-emerald-300">
+<span class="material-symbols-outlined text-sm">smart_toy</span>
+<span class="text-[11px] font-bold">AI Vendor Hub Copilot</span>
+</div>
+<p class="text-xs leading-snug">Yes dear! 3 left in stock. Price is ₦24,500. Delivery to Lekki Phase 1 is ₦2,200 (Arrives today via Gokada). Tap below to lock via Escrow:</p>
+<div class="mt-2.5 p-2 rounded-xl bg-[#0b0f19]/80 border border-white/[0.1] shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="text-xs font-bold text-white">Emerald Silk Wrap (12)</span>
+<span class="text-[11px] text-emerald-300 font-semibold">₦26,700 total (Escrow Secured)</span>
+</div>
+<span class="material-symbols-outlined text-emerald-400 text-lg">arrow_forward</span>
+</div>
+<span class="text-[9px] text-emerald-200/70 text-right block mt-1">11:42 AM • Instant AI Reply</span>
+</div>
+</div>
+</div>
+<!-- Center Pivot Arrow -->
+<div class="lg:col-span-2 flex flex-col items-center justify-center gap-2">
+<div class="w-12 h-12 rounded-full bg-gradient-to-tr from-emerald-500 to-teal-400 text-[#002113] flex items-center justify-center shadow-[0_0_20px_rgba(16,185,129,0.4)]">
+<span class="material-symbols-outlined text-2xl font-bold">sync_alt</span>
+</div>
+<span class="text-[11px] text-slate-300 text-center font-bold">Autonomous Conversion in 4 Secs</span>
+</div>
+<!-- Right: Instant Merchant Checkout & Payout Locker -->
+<div class="lg:col-span-5 backdrop-blur-xl bg-white/[0.04] border border-white/[0.1] rounded-2xl p-5 shadow-lg text-left">
+<div class="flex items-center justify-between mb-3">
+<span class="px-2.5 py-1 rounded-full bg-emerald-500/20 border border-emerald-400/40 text-emerald-300 text-[10px] font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-xs text-emerald-400">lock</span>
+              LOCKED IN ESCROW
+            </span>
+<span class="text-[10px] text-slate-400">Order #VH-9284</span>
+</div>
+<div class="space-y-3">
+<div class="flex items-center gap-3 p-2.5 rounded-xl bg-white/[0.03] border border-white/[0.06]">
+<img class="w-12 h-12 rounded-lg object-cover border border-white/[0.1]" data-alt="A luxurious emerald green silk wrap dress on an elegant editorial photoshoot background with rich lighting for Lagos boutique" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfqYhigP-3YWFo3aRm47o1O8DPJN6ahcWJUsyWeSocv0p-9e76Vew0kcqteL4GuRt340njBMOzuwsFR4p_3qsaoWBma1ubS2imCIImDMBHM_kGEB-4NltqEn0IR_6i1ls1-jkFeYJqYunxIKPdbNAEvrFRR5Qdpd8mRhr8geAc9PMLe2ByWy_IDexOnsfZmvAa0kiGULOq13_s_-1mjif85waIBTNKoOStNwdiNlkMNZa0AGgMxVkP"/>
+<div class="flex-1 min-w-0">
+<h5 class="text-xs text-white font-semibold truncate">Emerald Silk Wrap Dress</h5>
+<p class="text-[11px] text-slate-400">Size 12 • Lekki Express Dispatch</p>
+</div>
+<span class="text-xs text-emerald-400 font-bold">₦26,700</span>
+</div>
+<div class="p-3 rounded-xl bg-white/[0.03] border border-white/[0.06] flex flex-col gap-1.5">
+<div class="flex justify-between text-xs">
+<span class="text-slate-400">Buyer Payment Status</span>
+<span class="text-emerald-400 font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">verified</span> Confirmed via GTBank
+                </span>
+</div>
+<div class="flex justify-between text-xs">
+<span class="text-slate-400">Assigned Courier</span>
+<span class="font-semibold text-slate-200">Gokada Express (OTP Handover)</span>
+</div>
+</div>
+<div class="pt-2 flex items-center gap-2">
+<button class="flex-1 py-2.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-400 text-[#002113] font-bold text-xs shadow-md hover:brightness-110 transition-all text-center">
+                Dispatch &amp; Print Waybill
+              </button>
+<button class="px-3 py-2.5 rounded-xl bg-white/[0.06] hover:bg-white/[0.12] border border-white/[0.1] text-slate-200">
+<span class="material-symbols-outlined text-base">chat</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 10 AI Tools Bento-Grid Section -->
+<section class="w-full px-6 lg:px-12 py-20 relative" id="features">
+<div class="max-w-7xl mx-auto">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-400/30 text-emerald-300 text-[11px] font-bold uppercase tracking-wider mb-3 backdrop-blur-md">
+        10 Specialized AI Engines
+      </div>
+<h2 class="text-3xl lg:text-4xl text-white font-extrabold tracking-tight">
+        Everything You Need to Run a Multi-Million Naira Store from Your Phone
+      </h2>
+<p class="text-base text-slate-300 mt-3 leading-relaxed">
+        Zero complex computer setups. Every AI capability is optimized for local mobile browsers, shaky 4G connections, and real Nigerian commerce hustle.
+      </p>
+</div>
+<!-- Grid of 10 Glassmorphic Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Tool 01: Visual Studio -->
+<div class="rounded-2xl backdrop-blur-xl bg-white/[0.04] border border-white/[0.12] border-t-white/[0.22] p-6 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] flex flex-col justify-between hover:bg-white/[0.07] hover:border-white/[0.25] transition-all duration-300 group">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-400/30 text-emerald-300">AI Tool 01</span>
+<div class="w-10 h-10 rounded-xl bg-emerald-500/15 border border-emerald-400/30 text-emerald-400 flex items-center justify-center">
+<span class="material-symbols-outlined text-lg">photo_camera</span>
+</div>
+</div>
+<h3 class="text-lg text-white font-bold mb-2">AI Visual Studio</h3>
+<p class="text-sm text-slate-300 mb-6 leading-relaxed">
+            Snap bags, wigs, or native attires on a messy bedsheet or shop floor. Our AI strips the clutter, removes mannequins, and outputs studio-grade editorial lighting.
+          </p>
+</div>
+<div class="rounded-xl bg-[#0b0f19]/70 border border-white/[0.08] p-3 space-y-2">
+<div class="flex items-center justify-between text-[11px] font-semibold text-slate-400">
+<span>Raw Camera Snap</span>
+<span class="text-emerald-300">Studio Render ✨</span>
+</div>
+<div class="grid grid-cols-2 gap-2 h-28">
+<div class="relative rounded-lg overflow-hidden bg-black/40 flex items-center justify-center border border-white/[0.06]">
+<img class="w-full h-full object-cover filter blur-[0.5px]" data-alt="Close up of a leather designer bag resting on an unironed floral bedsheet with dim interior bedroom shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiaZ69Rt6BvN2QicScGH_HKt7mCg8MLZdCL3IU3j84pOH56971Rmmpn8ArafNVErDFUfUVgXnJCaNG2JG6w-diu_xiTltEfBh9Tydstn1giRPHb56YQafv0DLHV0WiJYeGeP2W7Ak_odN-SO6N-2uF0-4K9ZJ17Slhr9ogeJmqBKwKiH5ocwVcrzIqqq5w0u8a0yx9lQXtCle-vRXHkUe4dfqyqHsho22zWGXpG0ild7RR4AKdH3KS"/>
+<span class="absolute bottom-1 left-1 px-1.5 py-0.5 rounded bg-black/70 text-slate-200 text-[9px] font-medium backdrop-blur-xs">Before</span>
+</div>
+<div class="relative rounded-lg overflow-hidden bg-emerald-500/10 flex items-center justify-center border border-emerald-500/30">
+<img class="w-full h-full object-cover" data-alt="High-end studio product photograph of a luxury Nigerian leather handbag on a clean warm pedestal with warm golden light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAP8rYrWiCufoehNYmR2kWNKbC2YrM9ABZrzDRGoT2475SCpIWxjR1PDXwYGehIyB8zjj8HiYQNx5pMTFFDdZ3FGFCUt_d89v8JAISV87t_S7F_729e2JzZWq5eYuADab12yB2jvCPfgxS-fEWvsyewIJe3lKPR4qVMALz3sjoe81eJnENEq-GrekIIzJlalQZtBjcTB_CoUIuB5ddZq3BTa7SB_SGaQK5H59karvbauRv8soxetl9G"/>
+<span class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-emerald-500 text-[#002113] text-[9px] font-bold">AI Enhanced</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Tool 02: Voice-to-Store Assistant -->
+<div class="rounded-2xl backdrop-blur-xl bg-white/[0.04] border border-white/[0.12] border-t-white/[0.22] p-6 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] flex flex-col justify-between hover:bg-white/[0.07] hover:border-white/[0.25] transition-all duration-300">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-400/30 text-emerald-300">AI Tool 02</span>
+<div class="w-10 h-10 rounded-xl bg-cyan-500/15 border border-cyan-400/30 text-cyan-400 flex items-center justify-center">
+<span class="material-symbols-outlined text-lg">mic</span>
+</div>
+</div>
+<h3 class="text-lg text-white font-bold mb-2">Voice-to-Store (Pidgin &amp; Local)</h3>
+<p class="text-sm text-slate-300 mb-6 leading-relaxed">
+            Busy packing parcels? Speak in Nigerian English, Pidgin, Yoruba, Igbo, or Hausa. AI instantly captures the SKU, stock count, and price tag.
+          </p>
+</div>
+<div class="rounded-xl bg-[#0b0f19]/70 border border-white/[0.08] p-3.5 space-y-2">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-cyan-400 animate-ping"></span>
+<span class="text-[11px] text-cyan-300 font-bold">Voice Input (Audio Stream)</span>
+</div>
+<p class="text-xs italic text-slate-200 bg-white/[0.04] border border-white/[0.06] p-2 rounded-lg">
+            "Add 5 red bubu gown size 14, 25k each, delivery within Lagos na 2k."
+          </p>
+<div class="p-2 rounded-lg bg-emerald-500/15 border border-emerald-400/25 flex items-center justify-between text-[11px] text-emerald-300 font-bold">
+<span>✅ SKU: Bubu-Red-14</span>
+<span>Stock: 5 | ₦25,000</span>
+</div>
+</div>
+</div>
+<!-- Tool 03: Smart Receipt Shield -->
+<div class="rounded-2xl backdrop-blur-xl bg-white/[0.04] border border-white/[0.12] border-t-white/[0.22] p-6 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] flex flex-col justify-between hover:bg-white/[0.07] hover:border-white/[0.25] transition-all duration-300">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-400/30 text-emerald-300">AI Tool 03</span>
+<div class="w-10 h-10 rounded-xl bg-red-500/15 border border-red-400/30 text-red-400 flex items-center justify-center">
+<span class="material-symbols-outlined text-lg">security_update_good</span>
+</div>
+</div>
+<h3 class="text-lg text-white font-bold mb-2">Smart Receipt Shield</h3>
+<p class="text-sm text-slate-300 mb-6 leading-relaxed">
+            AI forensic scanner detects fake mobile transfer screenshots and font manipulations before you release your valuable goods to dispatch riders.
+          </p>
+</div>
+<div class="rounded-xl bg-[#0b0f19]/70 border border-white/[0.08] p-3.5 space-y-2">
+<div class="flex items-center justify-between p-2 rounded-lg bg-red-500/15 border border-red-500/30 text-red-200 text-xs font-semibold">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">warning</span> Edited Kuda Slip</span>
+<span class="font-bold text-red-400">FAKE ALERT ⚠️</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-emerald-500/15 border border-emerald-500/30 text-emerald-200 text-xs font-semibold">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm text-emerald-400">check_circle</span> GTBank Core API</span>
+<span class="font-bold text-emerald-400">₦48,000 SETTLED ✅</span>
+</div>
+</div>
+</div>
+<!-- Tool 04: WhatsApp DM Closer -->
+<div class="rounded-2xl backdrop-blur-xl bg-white/[0.04] border border-white/[0.12] border-t-white/[0.22] p-6 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] flex flex-col justify-between hover:bg-white/[0.07] hover:border-white/[0.25] transition-all duration-300">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-400/30 text-emerald-300">AI Tool 04</span>
+<div class="w-10 h-10 rounded-xl bg-emerald-500/15 border border-emerald-400/30 text-emerald-400 flex items-center justify-center">
+<span class="material-symbols-outlined text-lg">forum</span>
+</div>
+</div>
+<h3 class="text-lg text-white font-bold mb-2">WhatsApp DM Closer</h3>
+<p class="text-sm text-slate-300 mb-6 leading-relaxed">
+            Answers customer repetitive queries: "Is this still in stock?", "Last price?", and "Can you deliver to Ibadan tomorrow?" while sending direct escrow links.
+          </p>
+</div>
+<div class="rounded-xl bg-[#0b0f19]/70 border border-white/[0.08] p-3 space-y-2 text-xs">
+<div class="bg-white/[0.04] border border-white/[0.08] p-2 rounded-lg max-w-[80%] text-slate-300">
+            "Abeg what is last price for 2 pairs?"
+          </div>
+<div class="bg-emerald-500/20 border border-emerald-400/30 text-emerald-200 p-2 rounded-lg max-w-[88%] ml-auto text-[11px]">
+            "Special combo: ₦38,000 instead of ₦42,000 with free delivery. Deal closes in 30 mins! 👇"
+          </div>
+</div>
+</div>
+<!-- Tool 05: AI Caption & Hook Crafter -->
+<div class="rounded-2xl backdrop-blur-xl bg-white/[0.04] border border-white/[0.12] border-t-white/[0.22] p-6 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] flex flex-col justify-between hover:bg-white/[0.07] hover:border-white/[0.25] transition-all duration-300">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-400/30 text-emerald-300">AI Tool 05</span>
+<div class="w-10 h-10 rounded-xl bg-teal-500/15 border border-teal-400/30 text-teal-400 flex items-center justify-center">
+<span class="material-symbols-outlined text-lg">edit_note</span>
+</div>
+</div>
+<h3 class="text-lg text-white font-bold mb-2">AI Copy &amp; Caption Crafter</h3>
+<p class="text-sm text-slate-300 mb-6 leading-relaxed">
+            Generate viral Instagram hooks, broadcast blurbs, and TikTok captions optimized with trending hashtags like #LagosFashionVendor and #OwanbeStyles.
+          </p>
+</div>
+<div class="rounded-xl bg-[#0b0f19]/70 border border-white/[0.08] p-3 space-y-2">
+<div class="p-2.5 rounded-lg bg-white/[0.04] text-xs text-slate-200">
+<p class="font-bold text-[10px] text-emerald-400 mb-1">Generated Instagram Hook:</p>
+            "Steal the show at this weekend's owanbe without breaking your bank balance! ✨ Pure raw silk..."
+          </div>
+<button class="w-full py-1.5 rounded-lg bg-white/[0.06] hover:bg-white/[0.12] border border-white/[0.1] text-slate-200 text-xs font-bold flex items-center justify-center gap-1 transition-all">
+<span class="material-symbols-outlined text-sm text-emerald-400">content_copy</span> Copy Caption &amp; Tags
+          </button>
+</div>
+</div>
+<!-- Tool 06: Market Pulse & Pricing Engine -->
+<div class="rounded-2xl backdrop-blur-xl bg-white/[0.04] border border-white/[0.12] border-t-white/[0.22] p-6 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] flex flex-col justify-between hover:bg-white/[0.07] hover:border-white/[0.25] transition-all duration-300">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-400/30 text-emerald-300">AI Tool 06</span>
+<div class="w-10 h-10 rounded-xl bg-indigo-500/15 border border-indigo-400/30 text-indigo-400 flex items-center justify-center">
+<span class="material-symbols-outlined text-lg">trending_up</span>
+</div>
+</div>
+<h3 class="text-lg text-white font-bold mb-2">Market Pulse &amp; Pricing</h3>
+<p class="text-sm text-slate-300 mb-6 leading-relaxed">
+            Monitors Balogun, Tejuosho &amp; Trade Fair market prices. Automatically advises on optimal retail margins when dollar or logistics fuel costs fluctuate.
+          </p>
+</div>
+<div class="rounded-xl bg-[#0b0f19]/70 border border-white/[0.08] p-3.5 space-y-2">
+<div class="flex items-center justify-between text-xs">
+<span class="text-slate-400">Balogun Market Index</span>
+<span class="text-emerald-400 font-bold">+18% this week</span>
+</div>
+<svg class="w-full h-8 text-emerald-400 overflow-visible" viewbox="0 0 200 36">
+<path d="M0,28 Q30,32 60,20 T120,15 T160,8 L200,2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"></path>
+<circle cx="200" cy="2" fill="currentColor" r="3"></circle>
+</svg>
+<div class="p-2 rounded-lg bg-white/[0.04] border border-white/[0.06] flex justify-between items-center text-xs">
+<span class="text-slate-300">Suggested Listing:</span>
+<span class="text-emerald-400 font-bold">₦18,500 (+22% net)</span>
+</div>
+</div>
+</div>
+<!-- Tool 07: Smart Restock Predictor -->
+<div class="rounded-2xl backdrop-blur-xl bg-white/[0.04] border border-white/[0.12] border-t-white/[0.22] p-6 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] flex flex-col justify-between hover:bg-white/[0.07] hover:border-white/[0.25] transition-all duration-300">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-400/30 text-emerald-300">AI Tool 07</span>
+<div class="w-10 h-10 rounded-xl bg-amber-500/15 border border-amber-400/30 text-amber-400 flex items-center justify-center">
+<span class="material-symbols-outlined text-lg">inventory_2</span>
+</div>
+</div>
+<h3 class="text-lg text-white font-bold mb-2">Smart Restock Predictor</h3>
+<p class="text-sm text-slate-300 mb-6 leading-relaxed">
+            Never miss payday sales or festive rushes. Predicts when Ankara prints, human hair bundles, or skincare stock will deplete.
+          </p>
+</div>
+<div class="rounded-xl bg-[#0b0f19]/70 border border-white/[0.08] p-3.5 space-y-2">
+<div class="flex justify-between text-xs font-semibold">
+<span class="text-white">Kojic Acid Glow Serum</span>
+<span class="text-amber-400 font-bold">4 Units Left</span>
+</div>
+<div class="w-full h-2 rounded-full bg-white/[0.08] overflow-hidden">
+<div class="w-[20%] h-full bg-amber-400 rounded-full shadow-[0_0_8px_rgba(251,191,36,0.6)]"></div>
+</div>
+<p class="text-[11px] text-amber-300/90 font-medium">
+            ⚠️ Urgent: Re-order from supplier within 48 hrs before Friday payday.
+          </p>
+</div>
+</div>
+<!-- Tool 08: One-Click Waybill Generator -->
+<div class="rounded-2xl backdrop-blur-xl bg-white/[0.04] border border-white/[0.12] border-t-white/[0.22] p-6 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] flex flex-col justify-between hover:bg-white/[0.07] hover:border-white/[0.25] transition-all duration-300">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-400/30 text-emerald-300">AI Tool 08</span>
+<div class="w-10 h-10 rounded-xl bg-emerald-500/15 border border-emerald-400/30 text-emerald-400 flex items-center justify-center">
+<span class="material-symbols-outlined text-lg">receipt_long</span>
+</div>
+</div>
+<h3 class="text-lg text-white font-bold mb-2">Instant Waybill &amp; Invoices</h3>
+<p class="text-sm text-slate-300 mb-6 leading-relaxed">
+            Generate branded PDF waybills and invoices formatted for Lagos bike couriers, interstate luxury bus parcels (GIG, Peace Mass, Young Shall Grow).
+          </p>
+</div>
+<div class="rounded-xl bg-[#0b0f19]/70 border border-white/[0.08] p-3 flex items-center justify-between">
+<div class="space-y-0.5">
+<span class="text-xs font-bold block text-white">WAYBILL: #ABJ-291</span>
+<span class="text-[11px] text-slate-400 block">Recipient: Hauwa (Wuse II)</span>
+<span class="text-[10px] text-emerald-400 font-semibold">Ready for Thermal / WhatsApp Print</span>
+</div>
+<div class="w-11 h-11 bg-white/[0.06] border border-white/[0.1] rounded-lg p-1 flex items-center justify-center">
+<span class="material-symbols-outlined text-2xl text-slate-200">qr_code_2</span>
+</div>
+</div>
+</div>
+<!-- Tool 09: Debt & Credit Tracker (Alajo AI) -->
+<div class="rounded-2xl backdrop-blur-xl bg-white/[0.04] border border-white/[0.12] border-t-white/[0.22] p-6 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] flex flex-col justify-between hover:bg-white/[0.07] hover:border-white/[0.25] transition-all duration-300">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-400/30 text-emerald-300">AI Tool 09</span>
+<div class="w-10 h-10 rounded-xl bg-purple-500/15 border border-purple-400/30 text-purple-400 flex items-center justify-center">
+<span class="material-symbols-outlined text-lg">payments</span>
+</div>
+</div>
+<h3 class="text-lg text-white font-bold mb-2">Debt Tracker (Alajo AI)</h3>
+<p class="text-sm text-slate-300 mb-6 leading-relaxed">
+            Collect balance payments without awkward confrontations. Automated polite WhatsApp reminders with 1-tap partial settlement options.
+          </p>
+</div>
+<div class="rounded-xl bg-[#0b0f19]/70 border border-white/[0.08] p-3 space-y-1.5 text-xs">
+<div class="flex justify-between font-semibold">
+<span class="text-slate-200">Mrs. Titi (Outstanding: ₦15,000)</span>
+<span class="text-emerald-400">Reminder #2</span>
+</div>
+<p class="text-[11px] text-slate-400 italic bg-white/[0.03] border border-white/[0.06] p-2 rounded-lg">
+            "Hello dear, hope you're loving the sneakers! Just a quick ping for the remaining balance..."
+          </p>
+</div>
+</div>
+<!-- Tool 10: Multi-Channel Inventory Sync -->
+<div class="rounded-2xl backdrop-blur-xl bg-white/[0.04] border border-white/[0.12] border-t-white/[0.22] p-6 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] flex flex-col justify-between hover:bg-white/[0.07] hover:border-white/[0.25] transition-all duration-300 md:col-span-2 lg:col-span-1">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-400/30 text-emerald-300">AI Tool 10</span>
+<div class="w-10 h-10 rounded-xl bg-emerald-500/15 border border-emerald-400/30 text-emerald-400 flex items-center justify-center">
+<span class="material-symbols-outlined text-lg">hub</span>
+</div>
+</div>
+<h3 class="text-lg text-white font-bold mb-2">Multi-Channel Inventory Sync</h3>
+<p class="text-sm text-slate-300 mb-6 leading-relaxed">
+            Sell on Instagram, WhatsApp catalog, TikTok, and your physical counter without accidental double-selling. One central live stock counter.
+          </p>
+</div>
+<div class="rounded-xl bg-[#0b0f19]/70 border border-white/[0.08] p-3 space-y-2 text-xs">
+<div class="flex items-center justify-between font-medium">
+<span class="text-slate-300">Instagram DM</span>
+<span class="text-slate-400">Sold 1x (-1)</span>
+</div>
+<div class="flex items-center justify-between font-medium">
+<span class="text-slate-300">Physical Shop Counter</span>
+<span class="text-slate-400">Sold 2x (-2)</span>
+</div>
+<div class="p-2 rounded-lg bg-emerald-500/15 border border-emerald-400/30 text-emerald-300 font-bold flex justify-between items-center text-xs">
+<span>Universal Live Count:</span>
+<span class="text-sm text-white">3 Units Available</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Special Focus 1: Logistics Integration -->
+<section class="w-full px-6 lg:px-12 py-20 relative" id="logistics-integration">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-6 space-y-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-400/30 text-emerald-300 text-xs font-bold uppercase backdrop-blur-md">
+<span class="material-symbols-outlined text-base">two_wheeler</span>
+        1-Click Dispatch Automation
+      </div>
+<h2 class="text-3xl lg:text-4xl text-white font-extrabold tracking-tight leading-tight">
+        Never Chase a Delivery Bike Again. Call Verified Riders Instantly.
+      </h2>
+<p class="text-base text-slate-300 leading-relaxed">
+        Integrated with Gokada, Max.ng, Fez Delivery, Kwik, and trusted community dispatchers. Request pickups with zero phone calls, provide automated OTP security, and deliver within hours.
+      </p>
+<div class="grid grid-cols-2 gap-4 pt-2">
+<div class="p-4 rounded-xl backdrop-blur-xl bg-white/[0.04] border border-white/[0.1] border-t-white/[0.2]">
+<span class="text-2xl text-emerald-400 font-extrabold block">12 Mins</span>
+<p class="text-xs text-slate-400 mt-1">Average dispatch pickup time across Lagos &amp; Abuja</p>
+</div>
+<div class="p-4 rounded-xl backdrop-blur-xl bg-white/[0.04] border border-white/[0.1] border-t-white/[0.2]">
+<span class="text-2xl text-cyan-400 font-extrabold block">4-Digit OTP</span>
+<p class="text-xs text-slate-400 mt-1">Protected handoff stops riders handing goods to wrong persons</p>
+</div>
+</div>
+<div class="flex items-center gap-3 text-slate-400 pt-2 flex-wrap">
+<span class="text-xs font-semibold text-slate-300">Direct fleet partners:</span>
+<span class="px-2.5 py-1 rounded-lg bg-white/[0.05] border border-white/[0.1] text-xs font-bold text-white">GOKADA</span>
+<span class="px-2.5 py-1 rounded-lg bg-white/[0.05] border border-white/[0.1] text-xs font-bold text-white">FEZ</span>
+<span class="px-2.5 py-1 rounded-lg bg-white/[0.05] border border-white/[0.1] text-xs font-bold text-white">KWIK</span>
+<span class="px-2.5 py-1 rounded-lg bg-white/[0.05] border border-white/[0.1] text-xs font-bold text-white">GIG LOGISTICS</span>
+</div>
+</div>
+<!-- Interactive Rider Status Card -->
+<div class="lg:col-span-6">
+<div class="rounded-3xl backdrop-blur-2xl bg-white/[0.04] border border-white/[0.12] border-t-white/[0.25] p-6 sm:p-8 shadow-[0_16px_48px_0_rgba(0,0,0,0.4)] relative overflow-hidden">
+<div class="flex items-center justify-between pb-4 border-b border-white/[0.08] mb-6">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-2xl bg-emerald-500/15 border border-emerald-400/30 flex items-center justify-center text-emerald-400 shadow-[0_0_15px_rgba(16,185,129,0.2)]">
+<span class="material-symbols-outlined text-2xl">electric_moped</span>
+</div>
+<div>
+<span class="text-sm font-bold text-white block">Rider on the Way</span>
+<span class="text-xs text-slate-400">Gokada Express Fleet • ID #GK-882</span>
+</div>
+</div>
+<span class="px-3 py-1 rounded-full bg-emerald-500/20 border border-emerald-400/30 text-emerald-300 text-xs font-bold">
+            Arriving in 9 mins
+          </span>
+</div>
+<!-- Location visual card using data-location -->
+<div class="w-full h-48 bg-cover bg-center rounded-2xl mb-6 relative flex items-end p-4 border border-white/[0.1] shadow-inner overflow-hidden" data-location="Ikeja, Lagos, Nigeria" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCgBcuMUptBXooAOvj5PqON1tsKYhkKhdqG9M8KR740TtrCvZPDvkyn9t1QxOSGiB8hgiSCeJAdjD-T-ToxALa1P7xGT5kE3h2ZsCSus0lLhxz4P_0alyPc8d_Je1l1QmsMeVG0F_MMWm6xtXozhajFDYYhPOdiWuIOW3z8x3D0xx4UufkDI5OlJp-dymaMfGl7e_bovOb-aAEcx6j1Oqtk0fRO8IrLPA_sFPj2mq6H8tShWNLpkB4-');">
+<div class="p-3 rounded-xl bg-[#0b0f19]/80 backdrop-blur-xl border border-white/[0.15] flex items-center justify-between w-full shadow-lg">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+<span class="text-xs text-white font-medium">Current: Obafemi Awolowo Way, Ikeja</span>
+</div>
+<span class="text-[11px] text-emerald-400 font-bold">Live GPS</span>
+</div>
+</div>
+<!-- Rider Handshake Controls -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
+<div class="p-3.5 rounded-xl bg-[#0b0f19]/80 border border-white/[0.1] flex items-center justify-between">
+<div>
+<span class="text-[10px] text-slate-400 block uppercase font-bold tracking-wider">Delivery OTP</span>
+<span class="text-xl text-emerald-400 font-extrabold tracking-widest">7 4 0 2</span>
+</div>
+<span class="material-symbols-outlined text-emerald-400 text-2xl">verified_user</span>
+</div>
+<a class="w-full py-3.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-400 text-[#002113] font-bold text-xs flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(16,185,129,0.3)] hover:brightness-110 transition-all" href="tel:+2348000000000">
+<span class="material-symbols-outlined text-base">call</span>
+<span>Call Ibrahim (Rider)</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Special Focus 2: Bulletproof Escrow Payment Flow -->
+<section class="w-full px-6 lg:px-12 py-20 relative" id="escrow-and-trust">
+<div class="max-w-7xl mx-auto">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-400/30 text-emerald-300 text-xs font-bold uppercase mb-3 backdrop-blur-md">
+<span class="material-symbols-outlined text-base">verified</span>
+        Trust Pay Architecture
+      </div>
+<h2 class="text-3xl lg:text-4xl text-white font-extrabold tracking-tight">
+        Sell with 100% Confidence. Money Secured Before Goods Move.
+      </h2>
+<p class="text-base text-slate-300 mt-3 leading-relaxed">
+        No more buyers canceling when rider arrives. No more "What I ordered vs What I got" fear for your customers. Funds locked in CBN-compliant escrow and released in real time.
+      </p>
+</div>
+<!-- 4-Step Escrow Pipeline -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Step 1 -->
+<div class="p-6 rounded-2xl backdrop-blur-xl bg-white/[0.04] border border-white/[0.12] border-t-white/[0.22] shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] flex flex-col justify-between hover:bg-white/[0.07] transition-all">
+<div class="space-y-3">
+<span class="w-8 h-8 rounded-full bg-emerald-500/20 border border-emerald-400/40 text-emerald-300 font-bold text-xs flex items-center justify-center">01</span>
+<h4 class="text-base text-white font-bold">Buyer Pays to Escrow</h4>
+<p class="text-xs text-slate-300 leading-relaxed">
+            Customer checks out via instant bank transfer, USSD, or debit card. Money is locked securely by our partner CBN licensed vault.
+          </p>
+</div>
+<div class="mt-6 pt-4 border-t border-white/[0.08] flex items-center gap-1.5 text-emerald-400 text-xs font-bold">
+<span class="material-symbols-outlined text-base">savings</span>
+<span>Zero payment bounce</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="p-6 rounded-2xl backdrop-blur-xl bg-white/[0.04] border border-white/[0.12] border-t-white/[0.22] shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] flex flex-col justify-between hover:bg-white/[0.07] transition-all">
+<div class="space-y-3">
+<span class="w-8 h-8 rounded-full bg-emerald-500/20 border border-emerald-400/40 text-emerald-300 font-bold text-xs flex items-center justify-center">02</span>
+<h4 class="text-base text-white font-bold">Dispatched via Tracked Bike</h4>
+<p class="text-xs text-slate-300 leading-relaxed">
+            You hand parcel to our designated courier. Both vendor and customer follow live bike telemetry on WhatsApp.
+          </p>
+</div>
+<div class="mt-6 pt-4 border-t border-white/[0.08] flex items-center gap-1.5 text-emerald-400 text-xs font-bold">
+<span class="material-symbols-outlined text-base">local_shipping</span>
+<span>Real-time tracking</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="p-6 rounded-2xl backdrop-blur-xl bg-white/[0.04] border border-white/[0.12] border-t-white/[0.22] shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] flex flex-col justify-between hover:bg-white/[0.07] transition-all">
+<div class="space-y-3">
+<span class="w-8 h-8 rounded-full bg-cyan-500/20 border border-cyan-400/40 text-cyan-300 font-bold text-xs flex items-center justify-center">03</span>
+<h4 class="text-base text-white font-bold">Buyer Inspects &amp; Verifies</h4>
+<p class="text-xs text-slate-300 leading-relaxed">
+            Customer opens parcel in rider presence and supplies the unique 4-digit release OTP code to confirm satisfaction.
+          </p>
+</div>
+<div class="mt-6 pt-4 border-t border-white/[0.08] flex items-center gap-1.5 text-cyan-400 text-xs font-bold">
+<span class="material-symbols-outlined text-base">pin</span>
+<span>Proof of satisfaction</span>
+</div>
+</div>
+<!-- Step 4 (Luminous Highlighted Panel) -->
+<div class="p-6 rounded-2xl backdrop-blur-xl bg-emerald-500/20 border border-emerald-400/50 border-t-white/40 shadow-[0_12px_40px_rgba(16,185,129,0.25)] flex flex-col justify-between">
+<div class="space-y-3">
+<span class="w-8 h-8 rounded-full bg-emerald-400 text-[#002113] font-extrabold text-xs flex items-center justify-center shadow-md">04</span>
+<h4 class="text-base text-white font-bold">Instant Bank Settlement</h4>
+<p class="text-xs text-emerald-100/90 leading-relaxed">
+            Funds credit directly into your GTBank, Access, Zenith, OPay, or Kuda account within 60 seconds without processing delays.
+          </p>
+</div>
+<div class="mt-6 pt-4 border-t border-emerald-400/30 flex items-center gap-1.5 text-emerald-300 text-xs font-bold">
+<span class="material-symbols-outlined text-base">account_balance</span>
+<span>Instant NIP Settlement</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Pricing Plans Section -->
+<section class="w-full px-6 lg:px-12 py-20 relative" id="pricing">
+<div class="max-w-7xl mx-auto">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<span class="text-xs font-bold text-emerald-400 uppercase tracking-wider block mb-2">No Hidden Charges</span>
+<h2 class="text-3xl lg:text-4xl text-white font-extrabold tracking-tight">
+        Simple, Honest Naija Pricing
+      </h2>
+<p class="text-base text-slate-300 mt-3 leading-relaxed">
+        Start for zero Naira. Pay only a tiny fee when you close real sales. Upgrade only when you are scaling to multiple branch locations.
+      </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+<!-- Tier 1: Free Forever Starter (Highlighted Glass) -->
+<div class="rounded-3xl backdrop-blur-2xl bg-white/[0.05] border-2 border-emerald-400/50 p-8 shadow-[0_16px_48px_0_rgba(16,185,129,0.2)] relative flex flex-col justify-between">
+<div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-gradient-to-r from-emerald-500 to-teal-400 text-[#002113] text-[11px] font-extrabold uppercase tracking-wider shadow-md">
+          Most Popular For Beginners
+        </div>
+<div>
+<div class="flex items-center justify-between mb-4 mt-2">
+<h3 class="text-xl text-white font-bold">Starter Hustler</h3>
+<span class="px-2.5 py-0.5 rounded-full bg-emerald-500/20 border border-emerald-400/40 text-emerald-300 text-xs font-bold">100% Free</span>
+</div>
+<div class="flex items-baseline gap-1 mb-4">
+<span class="text-4xl lg:text-5xl text-white font-extrabold">₦0</span>
+<span class="text-sm text-slate-400 font-medium">/ forever</span>
+</div>
+<p class="text-xs text-slate-300 mb-6 pb-6 border-b border-white/[0.08] leading-relaxed">
+            Only 1.5% transaction fee when you make a sale. Zero monthly fixed subscription fees.
+          </p>
+<ul class="space-y-3 text-xs text-slate-200 mb-8">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-emerald-400 text-base">check_circle</span>
+<span>Unlimited AI product listings</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-emerald-400 text-base">check_circle</span>
+<span>50 AI Visual Studio photo cleanups / mo</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-emerald-400 text-base">check_circle</span>
+<span>WhatsApp catalog link generator</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-emerald-400 text-base">check_circle</span>
+<span>Automated Escrow payment protections</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-emerald-400 text-base">check_circle</span>
+<span>Basic fake payment alert shield</span>
+</li>
+</ul>
+</div>
+<a class="w-full py-4 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-400 text-[#002113] font-bold text-sm text-center shadow-[0_0_25px_rgba(16,185,129,0.35)] hover:shadow-[0_0_35px_rgba(16,185,129,0.55)] hover:scale-[1.01] transition-all" href="#">
+          Get Started Free
+        </a>
+</div>
+<!-- Tier 2: Growth Merchant -->
+<div class="rounded-3xl backdrop-blur-xl bg-white/[0.03] border border-white/[0.12] border-t-white/[0.2] p-8 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] flex flex-col justify-between hover:bg-white/[0.06] transition-all">
+<div>
+<div class="flex items-center justify-between mb-4">
+<h3 class="text-xl text-white font-bold">Growth Merchant</h3>
+<span class="px-2.5 py-0.5 rounded-full bg-cyan-500/20 border border-cyan-400/30 text-cyan-300 text-xs font-bold">Fast Growing</span>
+</div>
+<div class="flex items-baseline gap-1 mb-4">
+<span class="text-4xl lg:text-5xl text-white font-extrabold">₦7,500</span>
+<span class="text-sm text-slate-400 font-medium">/ month</span>
+</div>
+<p class="text-xs text-slate-300 mb-6 pb-6 border-b border-white/[0.08] leading-relaxed">
+            For active vendors fulfilling over 30 orders a week across Instagram and WhatsApp.
+          </p>
+<ul class="space-y-3 text-xs text-slate-200 mb-8">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-emerald-400 text-base">check_circle</span>
+<span>Everything in Starter plan</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-emerald-400 text-base">check_circle</span>
+<span>Unlimited AI Photo Studio upgrades</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-emerald-400 text-base">check_circle</span>
+<span>Full Voice-to-Store (Pidgin, Yoruba, Igbo)</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-emerald-400 text-base">check_circle</span>
+<span>1-Click automated bike dispatch booking</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-emerald-400 text-base">check_circle</span>
+<span>Custom domain link (yourbrand.ng)</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-emerald-400 text-base">check_circle</span>
+<span>Priority 24/7 WhatsApp VIP support</span>
+</li>
+</ul>
+</div>
+<a class="w-full py-4 rounded-xl backdrop-blur-md bg-white/[0.08] hover:bg-white/[0.15] border border-white/[0.2] text-white font-bold text-sm text-center shadow-md transition-all" href="#">
+          Upgrade to Growth
+        </a>
+</div>
+<!-- Tier 3: Wholesale Empire -->
+<div class="rounded-3xl backdrop-blur-xl bg-white/[0.03] border border-white/[0.12] border-t-white/[0.2] p-8 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] flex flex-col justify-between hover:bg-white/[0.06] transition-all">
+<div>
+<div class="flex items-center justify-between mb-4">
+<h3 class="text-xl text-white font-bold">Wholesale Empire</h3>
+<span class="px-2.5 py-0.5 rounded-full bg-white/[0.06] border border-white/[0.1] text-slate-300 text-xs font-bold">Multi-Branch</span>
+</div>
+<div class="flex items-baseline gap-1 mb-4">
+<span class="text-4xl lg:text-5xl text-white font-extrabold">₦24,000</span>
+<span class="text-sm text-slate-400 font-medium">/ month</span>
+</div>
+<p class="text-xs text-slate-300 mb-6 pb-6 border-b border-white/[0.08] leading-relaxed">
+            For established brands, major importers, and merchants managing shops in multiple cities.
+          </p>
+<ul class="space-y-3 text-xs text-slate-200 mb-8">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-emerald-400 text-base">check_circle</span>
+<span>Multi-branch inventory sync (Lagos, Abuja, PH)</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-emerald-400 text-base">check_circle</span>
+<span>Up to 10 staff logins with granular permissions</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-emerald-400 text-base">check_circle</span>
+<span>Direct interstate park dispatch manifests (GIG/Peace)</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-emerald-400 text-base">check_circle</span>
+<span>Zero transaction fees (0%) on all escrow orders</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-emerald-400 text-base">check_circle</span>
+<span>Dedicated account manager in Lagos</span>
+</li>
+</ul>
+</div>
+<a class="w-full py-4 rounded-xl backdrop-blur-md bg-white/[0.06] hover:bg-white/[0.12] border border-white/[0.15] text-white font-bold text-sm text-center transition-all" href="#">
+          Talk to Enterprise
+        </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Localized Real Stories (Testimonials) -->
+<section class="w-full px-6 lg:px-12 py-20 relative">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+<div>
+<span class="text-xs font-bold text-emerald-400 uppercase tracking-wider block mb-1">Authentic Nigerian Experiences</span>
+<h2 class="text-3xl lg:text-4xl text-white font-extrabold tracking-tight">
+          Hear from Vendors Stacking Bag Across Nigeria
+        </h2>
+</div>
+<div class="mt-4 md:mt-0 flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+<span class="text-xs text-slate-300 font-medium">Over 1,200 5-star merchant ratings</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Testimonial 1 -->
+<div class="p-6 rounded-2xl backdrop-blur-xl bg-white/[0.04] border border-white/[0.12] border-t-white/[0.22] shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] flex flex-col justify-between hover:bg-white/[0.07] transition-all">
+<p class="text-sm text-slate-200 leading-relaxed mb-6 italic">
+          "The voice-to-store feature in Pidgin listed 45 bags while I was busy packaging orders for my Abuja customers. Before, typing descriptions took hours. Now I just speak and it's live."
+        </p>
+<div class="flex items-center gap-3">
+<img class="w-12 h-12 rounded-full object-cover border border-emerald-400/40" data-alt="Portrait of a young confident Nigerian female fashion business owner in a stylish turban smiling warmly in her Kano leather showroom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAybtkMANdZLwDs5Qt3nx1M9uvVWw75oiceJ52iGnNyD2FZUr4sJZfrWuVTEZ8HGtTumYnmSiIcAu9jxOuByqc28jFRGOjg8eOG-XfbH251c8qcuWeUg7WPnzCHfE2qYjQ7rj89yDltdKaktZDGdQnINUVZn26m-RDs5bgN2tVSquKxCpX-VU56L6tWLxfMmypP4qjy2tawCCYaSlkMX7pEJenciVgP8dYXzXFuWRLWzdajd3Uxtm5g"/>
+<div>
+<h4 class="text-sm text-white font-bold">Amina Bello</h4>
+<p class="text-xs text-slate-400">Bello Leather Craft • Kano &amp; Abuja</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="p-6 rounded-2xl backdrop-blur-xl bg-white/[0.04] border border-white/[0.12] border-t-white/[0.22] shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] flex flex-col justify-between hover:bg-white/[0.07] transition-all">
+<p class="text-sm text-slate-200 leading-relaxed mb-6 italic">
+          "Fake transfer alerts nearly ruined my business in Aba. The Smart Receipt Shield saved me over ₦320,000 this past December alone. It immediately flags manipulated bank screenshots."
+        </p>
+<div class="flex items-center gap-3">
+<img class="w-12 h-12 rounded-full object-cover border border-emerald-400/40" data-alt="Portrait of a sharp Nigerian male entrepreneur in modern African attire standing inside his men's clothing store in Lagos" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCdXbrN98B39ryQM3lOgN4GJGQ1ZcdoEbpBzqNkCF25XTC0pPIvUT6ap9QIBCN-BAozumf5CJBrxdGVK5TFGQWe7Zzpyyy9S1ix1f1UssHWlAdw21qza07BgsxjVtpyV_UVViJ8HqoopmQTtgHw5wFUY-jCRLB3nbmGXsatL3qeUZzL_C6WBiClZG1_w_vd33G2_Pvmyo1yg4kuID_4NUwLqcqS1WunC8duRT_IP2AlBPB4o0IH_XJ"/>
+<div>
+<h4 class="text-sm text-white font-bold">Chinedu Okafor</h4>
+<p class="text-xs text-slate-400">Chinedu Menswear • Aba &amp; Lagos</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="p-6 rounded-2xl backdrop-blur-xl bg-white/[0.04] border border-white/[0.12] border-t-white/[0.22] shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] flex flex-col justify-between hover:bg-white/[0.07] transition-all">
+<p class="text-sm text-slate-200 leading-relaxed mb-6 italic">
+          "My WhatsApp orders are closed while I am sound asleep. Customers pay into escrow, dispatch riders are triggered automatically, and waking up to credit alerts every morning is sweet."
+        </p>
+<div class="flex items-center gap-3">
+<img class="w-12 h-12 rounded-full object-cover border border-emerald-400/40" data-alt="Portrait of a radiant Nigerian woman holding natural organic skincare bottles in her clean Lagos store laboratory" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5yo198SxNXYOrXttV3bs1Wpx6wlLZOXQAAY8Eg_iY05FDaeIWhKGSRPClipG5ZFRGfoxtcdFVV2zr2Tb-grnA1oIqZqIlpy1qmChDszxpELVznbXHC78NIXFu36LVKRopqoptBNxkKNzCZSWziydMfjahn_3_W7Wi3FLVdXQlknTcvm2Df8lDzg5U7KXMMz2MqUk30JNWfMk637Quj6IMWRPiLLeV0pN8QzrXI6AYTt-_WsGPEbP4"/>
+<div>
+<h4 class="text-sm text-white font-bold">Folake Adeyemi</h4>
+<p class="text-xs text-slate-400">Glow Naturals • Ikeja, Lagos</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Trust Badge Strip -->
+<div class="mt-12 p-4 rounded-2xl backdrop-blur-xl bg-white/[0.03] border border-white/[0.08] flex flex-wrap items-center justify-between gap-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-emerald-400 text-xl">verified_user</span>
+<span class="text-xs font-bold text-white">CBN Regulatory Framework Compliant Partner</span>
+</div>
+<div class="flex items-center gap-6 text-xs text-slate-400 flex-wrap">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-emerald-400 text-sm">lock</span> 256-Bit SSL Encrypted</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-emerald-400 text-sm">shield</span> NDPR Data Privacy Certified</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-emerald-400 text-sm">speed</span> 99.98% System Uptime</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Final High-Impact CTA (Frosted Glass Panel with Vibrant Emerald Underglow) -->
+<section class="w-full px-6 lg:px-12 py-20 relative overflow-hidden">
+<div class="max-w-5xl mx-auto rounded-3xl backdrop-blur-2xl bg-gradient-to-b from-white/[0.08] to-white/[0.02] border border-white/[0.18] border-t-white/[0.35] shadow-[0_20px_60px_rgba(16,185,129,0.25)] p-8 sm:p-14 text-center relative z-10 space-y-8">
+<div class="absolute -right-20 -bottom-20 w-96 h-96 bg-emerald-500/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -left-20 -top-20 w-96 h-96 bg-cyan-500/15 rounded-full blur-3xl pointer-events-none"></div>
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-500/15 border border-emerald-400/30 text-emerald-300 text-xs font-semibold backdrop-blur-md">
+<span>Built with pride in Nigeria 🇳🇬</span>
+<span class="text-white/30">•</span>
+<span>Setup in 60 seconds</span>
+</div>
+<h2 class="text-3xl sm:text-5xl text-white font-extrabold tracking-tight max-w-3xl mx-auto leading-tight">
+      Start Selling Smarter. Join Thousands of AI-Powered Sellers Today.
+    </h2>
+<p class="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed">
+      No complicated paperwork. No tech skills needed. Launch your professional catalog, accept instant escrow, and handle nationwide logistics now.
+    </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
+<a class="w-full sm:w-auto px-10 py-5 rounded-2xl bg-gradient-to-r from-emerald-500 to-teal-400 text-[#002113] font-extrabold text-base shadow-[0_0_30px_rgba(16,185,129,0.5)] hover:shadow-[0_0_45px_rgba(16,185,129,0.7)] hover:scale-105 border-t border-white/40 transition-all" href="#pricing">
+        Create Your Free AI Store in 1 Minute
+      </a>
+</div>
+<div class="flex flex-wrap items-center justify-center gap-6 pt-4 text-xs text-slate-400">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-emerald-400 text-sm">bolt</span> Instant Account Activation</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-emerald-400 text-sm">account_balance_wallet</span> Direct Bank Payouts</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-emerald-400 text-sm">support_agent</span> Dedicated Local Onboarding</span>
+</div>
+</div>
+</section>
+</div>
+<script>
+  function playVoiceSample() {
+    const btnText = document.getElementById('voiceBtnText');
+    if (!btnText) return;
+    
+    if (btnText.innerText.includes('Playing')) {
+      btnText.innerText = 'Listen to Pidgin Voice Demo 🎧';
+    } else {
+      btnText.innerText = '🔊 Playing: "Add 5 red bubu gown size 14..."';
+      setTimeout(() => {
+        btnText.innerText = 'Listen to Pidgin Voice Demo 🎧';
+      }, 4000);
+    }
+  }
+</script>
+</main>
+<!-- Footer (Glassmorphic) -->
+<footer class="w-full border-t border-white/[0.08] bg-[#0b0f19]/80 backdrop-blur-xl mt-20">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 pt-16 pb-12">
+<!-- Escrow Callout Panel -->
+<div class="p-6 rounded-2xl backdrop-blur-xl bg-white/[0.03] border border-white/[0.1] border-t-white/[0.2] shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] mb-12 flex flex-col md:flex-row items-center justify-between gap-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-2xl bg-emerald-500/15 border border-emerald-400/30 flex items-center justify-center text-emerald-400 shrink-0 shadow-[0_0_15px_rgba(16,185,129,0.2)]">
+<span class="material-symbols-outlined text-2xl">verified_user</span>
+</div>
+<div>
+<div class="flex items-center gap-2 flex-wrap">
+<span class="text-sm font-bold text-white">Bulletproof Escrow &amp; CBN Compliant Architecture</span>
+<span class="px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-400/30 text-[10px] font-bold">NDPR Certified</span>
+</div>
+<p class="text-xs text-slate-400 mt-1">All customer transactions, wallet settlements, and delivery release triggers are secured via CBN-licensed fintech rails.</p>
+</div>
+</div>
+<div class="flex items-center gap-3 shrink-0">
+<span class="text-xs text-slate-400 font-medium">Secured via:</span>
+<div class="flex items-center gap-2 text-xs">
+<span class="px-3 py-1.5 rounded-lg bg-white/[0.05] border border-white/[0.1] text-emerald-400 font-bold tracking-tight">Paystack Core</span>
+<span class="px-3 py-1.5 rounded-lg bg-white/[0.05] border border-white/[0.1] text-cyan-300 font-bold tracking-tight">Flutterwave Direct</span>
+</div>
+</div>
+</div>
+<!-- Navigation Columns -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+<div class="lg:col-span-2">
+<div class="flex items-center gap-3 mb-4">
+<div class="p-1 rounded-xl bg-white/[0.04] border border-white/[0.1]">
+<img alt="AI Vendor Hub Logo" class="h-6 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VpFLvbYV0QWL4LVcgxT3zv43qF8a884Y4nFha62gGdDP_2AtwIKfYzGF8_s9-y3Oq7NGBUSpJNbjEfMzPTJrjMB_F8MMgzDLUZ5Zv_I-UN_ap5zd2JGe7UeGDnv2dilETWyBZcL4UP72hjxJirZOySCEoPFrWNlXZTf5TdcCvuaULmeOVA-8pkNt1vOMhx7jNENqfs6IjRy0EKoFzLGL7IshvnwHIKKe21Up5R3NVex2ENwFXClJZ2fdo"/>
+</div>
+<span class="text-base text-white font-bold">AI Vendor Hub</span>
+</div>
+<p class="text-xs text-slate-400 max-w-sm mb-4 leading-relaxed">
+          Empowering Nigerian Instagram vendors, WhatsApp merchants, and market traders with smart automated storefronts, autonomous escrow, and nationwide logistics dispatch.
+        </p>
+<div class="flex items-center gap-2 text-slate-400">
+<a class="w-8 h-8 rounded-lg bg-white/[0.04] hover:bg-white/[0.1] border border-white/[0.08] flex items-center justify-center hover:text-emerald-400 transition-colors" href="#"><span class="material-symbols-outlined text-base">public</span></a>
+<a class="w-8 h-8 rounded-lg bg-white/[0.04] hover:bg-white/[0.1] border border-white/[0.08] flex items-center justify-center hover:text-emerald-400 transition-colors" href="#"><span class="material-symbols-outlined text-base">alternate_email</span></a>
+<a class="w-8 h-8 rounded-lg bg-white/[0.04] hover:bg-white/[0.1] border border-white/[0.08] flex items-center justify-center hover:text-emerald-400 transition-colors" href="#"><span class="material-symbols-outlined text-base">chat</span></a>
+<a class="w-8 h-8 rounded-lg bg-white/[0.04] hover:bg-white/[0.1] border border-white/[0.08] flex items-center justify-center hover:text-emerald-400 transition-colors" href="#"><span class="material-symbols-outlined text-base">forum</span></a>
+</div>
+</div>
+<div>
+<h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4">Tech Hubs &amp; Offices</h4>
+<ul class="space-y-2 text-xs text-slate-400">
+<li><a class="hover:text-emerald-400 transition-colors" href="#">Lagos Island: Marina Fintech Hub</a></li>
+<li><a class="hover:text-emerald-400 transition-colors" href="#">Yaba: Herbert Macaulay Way</a></li>
+<li><a class="hover:text-emerald-400 transition-colors" href="#">Abuja: Wuse II Innovation Center</a></li>
+<li><a class="hover:text-emerald-400 transition-colors" href="#">Port Harcourt: Peter Odili Lab</a></li>
+<li><a class="hover:text-emerald-400 transition-colors" href="#">Ibadan: Ring Road Tech Space</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4">Vendor Community</h4>
+<ul class="space-y-2 text-xs text-slate-400">
+<li><a class="hover:text-emerald-400 transition-colors" href="#">Naija Social Merchants Circle</a></li>
+<li><a class="hover:text-emerald-400 transition-colors" href="#">Lagos Market Digital Collective</a></li>
+<li><a class="hover:text-emerald-400 transition-colors" href="#">WhatsApp Sales Masterclass</a></li>
+<li><a class="hover:text-emerald-400 transition-colors" href="#">Alaba &amp; Trade Fair AI Group</a></li>
+<li><a class="hover:text-emerald-400 transition-colors" href="#">Delivery Riders Network</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4">Trust &amp; Legal</h4>
+<ul class="space-y-2 text-xs text-slate-400">
+<li><a class="hover:text-emerald-400 transition-colors" href="#">Escrow Protection Guarantee</a></li>
+<li><a class="hover:text-emerald-400 transition-colors" href="#">CBN Compliance Disclosure</a></li>
+<li><a class="hover:text-emerald-400 transition-colors" href="#">NDPR Privacy Policy</a></li>
+<li><a class="hover:text-emerald-400 transition-colors" href="#">Dispute Resolution (Lagos)</a></li>
+<li><a class="hover:text-emerald-400 transition-colors" href="#">Terms of Merchant Service</a></li>
+</ul>
+</div>
+</div>
+<!-- Copyright Subfooter -->
+<div class="pt-6 border-t border-white/[0.08] flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+<p>© 2025 AI Vendor Hub Technologies Nigeria Ltd. RC 1892842. All rights reserved.</p>
+<p class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+<span>Built with pride in Lagos &amp; Abuja</span>
+</p>
+</div>
+</div>
+</footer>
+</body></html>

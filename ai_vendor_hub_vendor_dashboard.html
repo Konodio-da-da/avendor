@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-background": "#dfe2ef",
+          "error-container": "#93000a",
+          "surface-container": "#1c1f29",
+          "primary-fixed-dim": "#4edea3",
+          "surface": "#0f131c",
+          "primary-fixed": "#6ffbbe",
+          "inverse-on-surface": "#2c303a",
+          "on-surface": "#dfe2ef",
+          "inverse-surface": "#dfe2ef",
+          "tertiary-fixed": "#e9ddff",
+          "on-primary-fixed": "#002113",
+          "on-error-container": "#ffdad6",
+          "surface-dim": "#0f131c",
+          "surface-bright": "#353943",
+          "inverse-primary": "#006c49",
+          "on-tertiary-fixed-variant": "#5516be",
+          "outline-variant": "#3c4a42",
+          "secondary-fixed-dim": "#adc6ff",
+          "on-surface-variant": "#bbcabf",
+          "primary-container": "#10b981",
+          "tertiary": "#d0bcff",
+          "secondary": "#adc6ff",
+          "surface-container-high": "#262a34",
+          "tertiary-container": "#b090ff",
+          "surface-container-highest": "#31353f",
+          "error": "#ffb4ab",
+          "surface-container-low": "#181b25",
+          "outline": "#86948a",
+          "on-tertiary": "#3c0091",
+          "on-tertiary-container": "#4600a7",
+          "on-secondary-fixed": "#001a42",
+          "on-secondary-fixed-variant": "#004395",
+          "on-secondary-container": "#e6ecff",
+          "background": "#0f131c",
+          "on-primary-container": "#00422b",
+          "surface-variant": "#31353f",
+          "on-error": "#690005",
+          "tertiary-fixed-dim": "#d0bcff",
+          "on-primary-fixed-variant": "#005236",
+          "secondary-fixed": "#d8e2ff",
+          "surface-container-lowest": "#0a0e17",
+          "on-primary": "#003824",
+          "secondary-container": "#0566d9",
+          "on-secondary": "#002e6a",
+          "primary": "#4edea3",
+          "on-tertiary-fixed": "#23005c",
+          "surface-tint": "#4edea3"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "margin-desktop": "3rem",
+          "space-xl": "2rem",
+          "space-xs": "0.5rem",
+          "space-3xl": "4rem",
+          "space-md": "1rem",
+          "space-2xs": "0.25rem",
+          "margin-mobile": "1rem",
+          "space-sm": "0.75rem",
+          "space-2xl": "3rem",
+          "margin-tablet": "2rem",
+          "space-lg": "1.5rem",
+          "gutter-mobile": "1rem",
+          "gutter-desktop": "1.5rem"
+        },
+        "fontFamily": {
+          "display-hero-mobile": [
+            "plusJakartaSans"
+          ],
+          "display-hero": [
+            "plusJakartaSans"
+          ],
+          "headline-lg-mobile": [
+            "plusJakartaSans"
+          ],
+          "body-sm": [
+            "plusJakartaSans"
+          ],
+          "headline-sm": [
+            "plusJakartaSans"
+          ],
+          "label-badge": [
+            "plusJakartaSans"
+          ],
+          "label-code": [
+            "jetbrainsMono"
+          ],
+          "body-md": [
+            "plusJakartaSans"
+          ],
+          "headline-lg": [
+            "plusJakartaSans"
+          ],
+          "title-md": [
+            "plusJakartaSans"
+          ],
+          "headline-md": [
+            "plusJakartaSans"
+          ],
+          "body-lg": [
+            "plusJakartaSans"
+          ]
+        },
+        "fontSize": {
+          "display-hero-mobile": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "display-hero": [
+            "56px",
+            {
+              "lineHeight": "64px",
+              "letterSpacing": "-0.03em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-lg-mobile": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-badge": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.05em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-code": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-md": [
+            "15px",
+            {
+              "lineHeight": "24px",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg": [
+            "40px",
+            {
+              "lineHeight": "48px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "title-md": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "letterSpacing": "0em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-md": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-lg": [
+            "18px",
+            {
+              "lineHeight": "28px",
+              "letterSpacing": "-0.005em",
+              "fontWeight": "400"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><aside class="hidden lg:flex fixed left-0 top-0 h-full w-72 bg-surface-container-lowest/80 backdrop-blur-xl z-50 flex-col shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 px-space-lg flex items-center justify-between bg-surface-container-low/40"><div class="flex items-center gap-space-sm"><img alt="Brand logo. - Primary color: #059669
+- Font: plusJakartaSans
+- Mode: light
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VpFLvbYV0QWL4LVcgxT3zv43qF8a884Y4nFha62gGdDP_2AtwIKfYzGF8_s9-y3Oq7NGBUSpJNbjEfMzPTJrjMB_F8MMgzDLUZ5Zv_I-UN_ap5zd2JGe7UeGDnv2dilETWyBZcL4UP72hjxJirZOySCEoPFrWNlXZTf5TdcCvuaULmeOVA-8pkNt1vOMhx7jNENqfs6IjRy0EKoFzLGL7IshvnwHIKKe21Up5R3NVex2ENwFXClJZ2fdo"/><div class="flex flex-col"><span class="font-title-md text-title-md text-on-surface tracking-tight leading-none">AI Hub</span><span class="font-label-badge text-label-badge text-primary mt-1 tracking-wider uppercase">Merchant Os</span></div></div><div class="flex items-center px-space-2xs py-0.5 rounded-full bg-surface-container-high"><span class="w-2 h-2 rounded-full bg-primary animate-pulse mr-1.5"></span><span class="font-label-badge text-label-badge text-on-surface-variant uppercase tracking-wider">NG</span></div></div><div class="px-space-md py-space-sm"><div class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container transition-all cursor-pointer"><div class="flex items-center gap-space-xs overflow-hidden"><span class="material-symbols-outlined text-primary text-title-md">storefront</span><div class="truncate"><p class="font-body-sm text-body-sm text-on-surface font-semibold truncate">Amina Luxury</p><p class="font-label-badge text-label-badge text-on-surface-variant truncate">Balogun Mkt, Lagos</p></div></div><span class="material-symbols-outlined text-on-surface-variant text-body-sm">unfold_more</span></div></div><div class="px-space-md py-space-xs flex-1 overflow-y-auto"><p class="px-space-sm mb-space-2xs font-label-badge text-label-badge uppercase tracking-wider text-on-surface-variant">Core Operations</p><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-xl shadow-sm"><a aria-current="page" class="flex items-center justify-between px-space-sm py-space-xs transition-colors bg-primary-container text-on-primary-container font-semibold rounded-xl shadow-sm" data-path="dashboard" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-body-lg">grid_view</span><span class="font-body-md text-body-md">Home &amp; Hub</span></div></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="products" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-body-lg">inventory_2</span><span class="font-body-md text-body-md">Products</span></div></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="orders" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-body-lg">local_shipping</span><span class="font-body-md text-body-md">Orders &amp; Dispatch</span></div><span class="px-space-2xs py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-badge text-label-badge">3 New</span></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="customers" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-body-lg">group</span><span class="font-body-md text-body-md">Customers</span></div></a></nav><p class="px-space-sm mt-space-md mb-space-2xs font-label-badge text-label-badge uppercase tracking-wider text-on-surface-variant">Growth &amp; AI</p><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-xl shadow-sm"><a class="flex items-center justify-between px-space-sm py-space-xs rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="ai-toolkit" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-body-lg text-primary">psychology</span><span class="font-body-md text-body-md">AI Toolkit</span></div><span class="px-space-2xs py-0.5 rounded-full bg-primary-container text-on-primary-container font-label-badge text-label-badge font-semibold">10 Tools</span></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="broadcasts" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-body-lg">send</span><span class="font-body-md text-body-md">Broadcasts</span></div><span class="font-label-badge text-label-badge text-outline">WhatsApp</span></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="wallet-and-escrow" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-body-lg">account_balance_wallet</span><span class="font-body-md text-body-md">Escrow &amp; Payout</span></div></a></nav><p class="px-space-sm mt-space-md mb-space-2xs font-label-badge text-label-badge uppercase tracking-wider text-on-surface-variant">System &amp; Care</p><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-xl shadow-sm"><a class="flex items-center justify-between px-space-sm py-space-xs rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="settings" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-body-lg">tune</span><span class="font-body-md text-body-md">Store Settings</span></div></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="pidgin-support" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-body-lg text-tertiary">support_agent</span><span class="font-body-md text-body-md">Pidgin Support</span></div><span class="w-2 h-2 rounded-full bg-primary"></span></a></nav></div><div class="p-space-md bg-surface-container-low/50"><div class="p-space-sm rounded-xl bg-surface-container-high/60 flex items-center justify-between"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary-fixed-dim text-body-lg">security</span><div><p class="font-label-badge text-label-badge text-on-surface-variant uppercase">NDPR Compliant</p><p class="font-label-code text-label-code text-on-surface">CBN Escrow Safe</p></div></div><span class="material-symbols-outlined text-on-surface-variant text-body-sm">verified</span></div></div></aside><div class="lg:pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-0 lg:left-72 right-0 h-20 bg-surface/85 backdrop-blur-xl z-40 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-space-md lg:px-space-xl flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm min-w-0"><div class="flex lg:hidden items-center gap-space-xs"><img alt="Brand logo. - Primary color: #059669
+- Font: plusJakartaSans
+- Mode: light
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VpFLvbYV0QWL4LVcgxT3zv43qF8a884Y4nFha62gGdDP_2AtwIKfYzGF8_s9-y3Oq7NGBUSpJNbjEfMzPTJrjMB_F8MMgzDLUZ5Zv_I-UN_ap5zd2JGe7UeGDnv2dilETWyBZcL4UP72hjxJirZOySCEoPFrWNlXZTf5TdcCvuaULmeOVA-8pkNt1vOMhx7jNENqfs6IjRy0EKoFzLGL7IshvnwHIKKe21Up5R3NVex2ENwFXClJZ2fdo"/></div><div class="hidden sm:flex items-center gap-space-xs px-space-sm py-1.5 rounded-xl bg-surface-container-high/70 hover:bg-surface-container-highest cursor-pointer transition-colors max-w-xs md:max-w-md"><span class="material-symbols-outlined text-primary text-title-md">store</span><div class="truncate"><p class="font-title-md text-title-md text-on-surface leading-tight truncate">Amina Luxury Fabrics</p><p class="font-label-badge text-label-badge text-on-surface-variant truncate">Balogun Market, Lagos Island</p></div><span class="material-symbols-outlined text-on-surface-variant text-body-sm ml-1">expand_more</span></div></div><div class="flex items-center gap-space-xs sm:gap-space-sm"><div class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-full bg-surface-container-high/80"><div class="w-2 h-2 rounded-full bg-primary animate-ping"></div><div class="flex flex-col sm:flex-row sm:items-baseline sm:gap-1.5"><span class="font-label-badge text-label-badge text-on-surface-variant uppercase tracking-wider hidden md:inline">Escrow:</span><span class="font-label-code text-label-code text-primary font-bold whitespace-nowrap">₦485,200</span></div></div><button class="flex items-center gap-1 px-space-xs sm:px-space-sm py-1.5 rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface transition-colors"><span class="material-symbols-outlined text-body-sm text-tertiary">translate</span><span class="font-label-badge text-label-badge font-semibold hidden sm:inline">Pidgin: ON</span><span class="font-label-badge text-label-badge font-semibold sm:hidden">WAZOBIA</span></button><button class="relative p-2 rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface transition-colors"><span class="material-symbols-outlined text-title-md">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 bg-error rounded-full ring-2 ring-surface"></span></button><div class="flex items-center gap-space-xs pl-space-2xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1W6HlrA-hJKtwEqrNwVaNDbczuapbNthput_SW1cOlrkgUoiNu-Orl8ghhKZJVt4sZxINKA7rMMM-0K9NhVi4zHLqjGVmpjdVfL91oxq1zjhq6UJ_RhkOQW8y9H5UCQStd8XvyiL2rs6-XJeEDvbW5G31no5G9WQBa6Q7oV6Gs-mkEkCEDFv49bd367o_BsglebsCM3NmqBaKlMoHefICRhh0c5_LZElGHxqm2D2gqs9iUcovWay8hKlUs"/><div class="hidden xl:flex flex-col"><span class="font-body-sm text-body-sm font-semibold text-on-surface leading-none">Amina B.</span><span class="font-label-badge text-label-badge text-primary mt-0.5">Super Vendor</span></div></div></div></div></header><main class="w-full pt-20 pb-20 lg:pb-space-xl bg-background"><div class="flex flex-col w-full px-space-md lg:px-space-xl py-space-lg space-y-space-xl">
+<!-- TOP WELCOME & CBN ESCROW TICKER BANNER -->
+<section class="relative overflow-hidden rounded-xl bg-surface-container-low/90 shadow-xl backdrop-blur-2xl p-space-lg">
+<!-- Atmospheric Ambient Glows -->
+<div class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-primary/10 blur-3xl pointer-events-none"></div>
+<div class="absolute -left-20 -bottom-20 w-80 h-80 rounded-full bg-secondary-container/15 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col xl:flex-row items-start xl:items-center justify-between gap-space-lg">
+<div class="space-y-space-xs max-w-2xl">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center gap-1.5 px-space-xs py-0.5 rounded-full bg-primary/15 text-primary font-label-badge text-label-badge font-semibold tracking-wider uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span>
+            Co-Pilot v4.2 Live
+          </span>
+<span class="text-outline text-body-sm">•</span>
+<span class="font-label-badge text-label-badge text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-title-md text-primary">forum</span>
+            WhatsApp Bot Active (⚡ 4.1s reply)
+          </span>
+<span class="text-outline text-body-sm hidden sm:inline">•</span>
+<span class="font-label-badge text-label-badge text-tertiary-fixed-dim hidden sm:flex items-center gap-1">
+<span class="material-symbols-outlined text-title-md">shield_lock</span>
+            CBN Escrow Rails Synced
+          </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+          Welcome back, <span class="text-primary font-bold">Amina</span>!
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Your automated sales channels are operational across Balogun, IG Shop, and WhatsApp. Today's settlement is tracking on schedule.
+        </p>
+</div>
+<!-- Quick Escrow Settlement Ticker Pill -->
+<div class="w-full xl:w-auto flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm bg-surface-container/80 p-space-sm rounded-xl shadow-md">
+<div class="flex items-center gap-space-xs pr-space-md">
+<div class="w-10 h-10 rounded-lg bg-primary-container/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-headline-sm">payments</span>
+</div>
+<div>
+<div class="flex items-center gap-1">
+<span class="font-label-badge text-label-badge uppercase text-on-surface-variant">Today's Payout</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+</div>
+<p class="font-headline-sm text-headline-sm text-on-surface font-bold">₦184,500</p>
+</div>
+</div>
+<div class="flex items-center justify-between sm:justify-start gap-space-sm pl-0 sm:pl-space-sm py-1">
+<div class="text-left">
+<span class="font-label-code text-label-code text-on-surface-variant block">Clearing Window</span>
+<span class="font-label-code text-label-code text-primary font-semibold">4:00 PM (Access Bank)</span>
+</div>
+<button class="px-space-sm py-1.5 rounded-lg bg-primary text-on-primary font-title-md text-body-sm font-semibold hover:bg-primary-fixed-dim transition-all shadow-[0_0_20px_rgba(78,222,163,0.3)]">
+            Instant Sweep
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- TOP ANALYTICS METRICS (BENTO GRID 4-COLUMN) -->
+<section class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- Metric 1: Today's Sales -->
+<div class="p-space-lg rounded-xl bg-surface-container/70 shadow-lg hover:bg-surface-container transition-all flex flex-col justify-between group">
+<div class="flex items-center justify-between">
+<span class="font-label-badge text-label-badge uppercase text-on-surface-variant tracking-wider">Today's Gross Sales</span>
+<span class="p-1 rounded-md bg-surface-container-high text-primary">
+<span class="material-symbols-outlined text-body-md">trending_up</span>
+</span>
+</div>
+<div class="my-space-sm">
+<p class="font-headline-lg text-headline-lg text-on-surface font-bold">₦348,000</p>
+<div class="flex items-center gap-1.5 mt-1">
+<span class="font-label-code text-label-code text-primary font-semibold flex items-center">
+<span class="material-symbols-outlined text-body-sm">arrow_upward</span> +18.4%
+          </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">vs yesterday</span>
+</div>
+</div>
+<!-- Mini SVG Sparkline -->
+<div class="w-full h-8 pt-1">
+<svg class="w-full h-full overflow-visible" fill="none" viewbox="0 0 100 24">
+<path class="text-primary" d="M0 20 L15 17 L30 19 L45 11 L60 14 L75 8 L90 5 L100 2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+<path class="text-primary/10" d="M0 20 L15 17 L30 19 L45 11 L60 14 L75 8 L90 5 L100 2 L100 24 L0 24 Z" fill="currentColor"></path>
+</svg>
+</div>
+</div>
+<!-- Metric 2: Open Orders & CBN Escrow Safe -->
+<div class="p-space-lg rounded-xl bg-surface-container/70 shadow-lg hover:bg-surface-container transition-all flex flex-col justify-between group">
+<div class="flex items-center justify-between">
+<span class="font-label-badge text-label-badge uppercase text-on-surface-variant tracking-wider">Escrow Protected</span>
+<span class="p-1 rounded-md bg-surface-container-high text-secondary-fixed-dim">
+<span class="material-symbols-outlined text-body-md">verified_user</span>
+</span>
+</div>
+<div class="my-space-sm">
+<p class="font-headline-lg text-headline-lg text-on-surface font-bold">14 Orders</p>
+<div class="flex items-center gap-1.5 mt-1">
+<span class="font-label-code text-label-code text-primary font-semibold">₦485,200</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">in vault (0% dispute)</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-2 overflow-hidden flex">
+<div class="bg-primary h-full rounded-full" style="width: 78%;"></div>
+</div>
+</div>
+<!-- Metric 3: New Customer Leads -->
+<div class="p-space-lg rounded-xl bg-surface-container/70 shadow-lg hover:bg-surface-container transition-all flex flex-col justify-between group">
+<div class="flex items-center justify-between">
+<span class="font-label-badge text-label-badge uppercase text-on-surface-variant tracking-wider">WhatsApp Leads</span>
+<span class="p-1 rounded-md bg-surface-container-high text-tertiary">
+<span class="material-symbols-outlined text-body-md">smart_toy</span>
+</span>
+</div>
+<div class="my-space-sm">
+<p class="font-headline-lg text-headline-lg text-on-surface font-bold">38 Inquiries</p>
+<div class="flex items-center gap-1.5 mt-1">
+<span class="font-label-code text-label-code text-tertiary font-semibold">29 Auto-Closed</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(76% win rate)</span>
+</div>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-code text-label-code">
+<span class="material-symbols-outlined text-body-sm text-primary">bolt</span>
+        Avg AI Close Time: 2m 14s
+      </div>
+</div>
+<!-- Metric 4: Low Stock Warnings -->
+<div class="p-space-lg rounded-xl bg-surface-container/70 shadow-lg hover:bg-surface-container transition-all flex flex-col justify-between group">
+<div class="flex items-center justify-between">
+<span class="font-label-badge text-label-badge uppercase text-on-surface-variant tracking-wider">Critical Inventory</span>
+<span class="p-1 rounded-md bg-error-container text-error">
+<span class="material-symbols-outlined text-body-md">warning</span>
+</span>
+</div>
+<div class="my-space-sm">
+<p class="font-headline-lg text-headline-lg text-error font-bold">3 Hot Items</p>
+<div class="flex items-center gap-1.5 mt-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Emerald Silk Wrap (2 pcs)</span>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-label-badge text-label-badge text-on-surface-variant">Payday run predicted</span>
+<span class="font-label-code text-label-code text-error underline cursor-pointer">View alert</span>
+</div>
+</div>
+</section>
+<!-- QUICK ACTION COMMAND HUB -->
+<section class="p-space-lg rounded-xl bg-surface-container-low shadow-lg">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs mb-space-md">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Quick Command Hub</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">One-click automation built for busy Balogun &amp; Lekki merchants</p>
+</div>
+<span class="font-label-code text-label-code text-primary bg-primary/10 px-2 py-1 rounded-md self-start sm:self-auto">
+        Microphone / Camera / Logistics API: Connected
+      </span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-sm">
+<!-- Quick Button 1 -->
+<button class="p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-all text-left flex items-start gap-space-sm group shadow-sm" onclick="activateVoiceRecorder()">
+<div class="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-headline-md">mic</span>
+</div>
+<div class="min-w-0">
+<p class="font-title-md text-title-md text-on-surface font-semibold flex items-center gap-1">
+            Voice Add Item
+            <span class="font-label-badge text-label-badge text-primary bg-primary/10 px-1.5 py-0.5 rounded">Pidgin</span>
+</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Speak Yoruba, Igbo, or Pidgin</p>
+</div>
+</button>
+<!-- Quick Button 2 -->
+<button class="p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-all text-left flex items-start gap-space-sm group shadow-sm">
+<div class="w-12 h-12 rounded-xl bg-secondary-container/20 flex items-center justify-center text-secondary-fixed-dim group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-headline-md">auto_awesome</span>
+</div>
+<div class="min-w-0">
+<p class="font-title-md text-title-md text-on-surface font-semibold">Quick Hype Copy</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">IG Captions &amp; #BalogunMarket tags</p>
+</div>
+</button>
+<!-- Quick Button 3 -->
+<button class="p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-all text-left flex items-start gap-space-sm group shadow-sm">
+<div class="w-12 h-12 rounded-xl bg-primary-container/20 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-headline-md">two_wheeler</span>
+</div>
+<div class="min-w-0">
+<p class="font-title-md text-title-md text-on-surface font-semibold">Call Fez / Gokada</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Instant rider dispatch with secure OTP</p>
+</div>
+</button>
+<!-- Quick Button 4 -->
+<button class="p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-all text-left flex items-start gap-space-sm group shadow-sm">
+<div class="w-12 h-12 rounded-xl bg-error-container/30 flex items-center justify-center text-error group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-headline-md">security_update_good</span>
+</div>
+<div class="min-w-0">
+<p class="font-title-md text-title-md text-on-surface font-semibold">Smart Receipt Shield</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Detect fake bank alerts in 3 secs</p>
+</div>
+</button>
+</div>
+</section>
+<!-- TWO-COLUMN SECTION: LIVE AI CO-PILOT FEED & PRODUCT STUDIO -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<!-- AI CO-PILOT LIVE ACTION FEED (5 COLS) -->
+<section class="xl:col-span-5 space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-primary animate-ping"></span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">AI Co-Pilot Feed</h2>
+</div>
+<span class="font-label-badge text-label-badge text-on-surface-variant uppercase">3 Requires Action</span>
+</div>
+<div class="space-y-space-sm">
+<!-- Feed Card 1: Verified Receipt -->
+<div class="p-space-md rounded-xl bg-surface-container-low/90 shadow-md transition-all hover:bg-surface-container space-y-space-xs">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2">
+<span class="p-1.5 rounded-lg bg-primary-container text-on-primary-container">
+<span class="material-symbols-outlined text-title-md">verified</span>
+</span>
+<div>
+<p class="font-title-md text-body-md text-on-surface font-semibold">Transfer Verified: ₦26,700</p>
+<p class="font-label-badge text-label-badge text-on-surface-variant">Customer @Kemi_Lagos (WhatsApp)</p>
+</div>
+</div>
+<span class="font-label-badge text-label-badge text-primary bg-primary/10 px-2 py-0.5 rounded-full font-semibold">100% Genuine GTB</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Smart Receipt Shield scanned reference <span class="font-label-code text-label-code text-on-surface">GTB-77291034-TRF</span>. Matched real CBN settlement session.
+          </p>
+<div class="flex items-center gap-space-xs pt-1">
+<button class="px-space-sm py-1 rounded-lg bg-primary text-on-primary font-label-badge text-label-badge font-bold hover:bg-primary-fixed-dim transition-colors">
+              Approve &amp; Print Waybill
+            </button>
+<button class="px-space-sm py-1 rounded-lg bg-surface-container-high text-on-surface font-label-badge text-label-badge hover:bg-surface-container-highest transition-colors">
+              View Slip
+            </button>
+</div>
+</div>
+<!-- Feed Card 2: Restock Predictor -->
+<div class="p-space-md rounded-xl bg-surface-container-low/90 shadow-md transition-all hover:bg-surface-container space-y-space-xs">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2">
+<span class="p-1.5 rounded-lg bg-secondary-container text-on-secondary-container">
+<span class="material-symbols-outlined text-title-md">inventory</span>
+</span>
+<div>
+<p class="font-title-md text-body-md text-on-surface font-semibold">Restock Alert: Ankara Silk Crepe</p>
+<p class="font-label-badge text-label-badge text-on-surface-variant">4 pieces remaining in store</p>
+</div>
+</div>
+<span class="font-label-badge text-label-badge text-secondary-fixed-dim bg-secondary-container/30 px-2 py-0.5 rounded-full">High Velocity</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Friday civil servant payday spike incoming. Predicted stockout in 18 hours. Kantin Kwari supplier price: ₦11,200/yard.
+          </p>
+<div class="flex items-center gap-space-xs pt-1">
+<button class="px-space-sm py-1 rounded-lg bg-primary-container text-on-primary-container font-label-badge text-label-badge font-bold hover:opacity-90 transition-opacity">
+              Auto-Order 20 Yards
+            </button>
+<button class="px-space-sm py-1 rounded-lg bg-surface-container-high text-on-surface font-label-badge text-label-badge hover:bg-surface-container-highest transition-colors">
+              Snooze
+            </button>
+</div>
+</div>
+<!-- Feed Card 3: Alajo Debt AI -->
+<div class="p-space-md rounded-xl bg-surface-container-low/90 shadow-md transition-all hover:bg-surface-container space-y-space-xs">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2">
+<span class="p-1.5 rounded-lg bg-surface-container-highest text-tertiary">
+<span class="material-symbols-outlined text-title-md">account_balance</span>
+</span>
+<div>
+<p class="font-title-md text-body-md text-on-surface font-semibold">Alajo Debt AI: ₦15,000 Overdue</p>
+<p class="font-label-badge text-label-badge text-on-surface-variant">Obi Trading (Tejuosho Market)</p>
+</div>
+</div>
+<span class="font-label-badge text-label-badge text-tertiary bg-tertiary-container/20 px-2 py-0.5 rounded-full">3 Days Late</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Polite automated Yoruba/Pidgin payment reminder queued: <span class="italic">“Egbon Obi, how market today? Gentle ping for our balance...”</span>
+</p>
+<div class="flex items-center gap-space-xs pt-1">
+<button class="px-space-sm py-1 rounded-lg bg-tertiary text-on-tertiary font-label-badge text-label-badge font-bold hover:bg-tertiary-fixed transition-colors">
+              Send Reminder via WhatsApp
+            </button>
+<button class="px-space-sm py-1 rounded-lg bg-surface-container-high text-on-surface font-label-badge text-label-badge hover:bg-surface-container-highest transition-colors">
+              Call Direct
+            </button>
+</div>
+</div>
+</div>
+</section>
+<!-- PRODUCT MANAGEMENT & AI STUDIO (7 COLS) -->
+<section class="xl:col-span-7 rounded-xl bg-surface-container-low p-space-lg shadow-xl space-y-space-md">
+<!-- Tab Header -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs border-b border-outline-variant/30 pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<button class="px-space-sm py-1.5 rounded-lg bg-primary text-on-primary font-title-md text-body-sm font-semibold transition-all" id="tab-studio">
+            ✨ AI Add Product Studio
+          </button>
+<button class="px-space-sm py-1.5 rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface font-title-md text-body-sm font-medium transition-all" id="tab-inventory">
+            Live Inventory (142 Items)
+          </button>
+</div>
+<span class="font-label-code text-label-code text-on-surface-variant">
+          Auto-Sync: <span class="text-primary font-bold">WhatsApp Catalog</span>
+</span>
+</div>
+<!-- Voice Transcription Live Bar -->
+<div class="p-space-sm rounded-xl bg-surface-container-lowest flex flex-col md:flex-row items-start md:items-center justify-between gap-space-sm shadow-inner">
+<div class="flex items-center gap-space-sm w-full md:w-auto">
+<div class="relative w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-headline-sm animate-pulse">mic</span>
+</div>
+<div class="min-w-0">
+<span class="font-label-badge text-label-badge text-primary uppercase font-bold tracking-wider">Voice Transcriber Active</span>
+<p class="font-label-code text-label-code text-on-surface italic truncate max-w-sm sm:max-w-md" id="voice-text">
+              “Add five piece emerald silk dress size 12, ₦24,500 each, ready for dispatch...”
+            </p>
+</div>
+</div>
+<!-- Audio waveform visualization -->
+<div class="flex items-center gap-1 h-6 self-end md:self-center pr-space-xs">
+<span class="w-1 h-3 bg-primary rounded-full animate-bounce"></span>
+<span class="w-1 h-5 bg-primary rounded-full animate-pulse"></span>
+<span class="w-1 h-6 bg-primary rounded-full animate-bounce" style="animation-delay: 0.15s"></span>
+<span class="w-1 h-4 bg-primary rounded-full animate-pulse"></span>
+<span class="w-1 h-2 bg-primary rounded-full animate-bounce" style="animation-delay: 0.25s"></span>
+</div>
+</div>
+<!-- 3 Smart AI Visual Studio Slots -->
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<label class="font-title-md text-body-md text-on-surface font-semibold">AI Visual Studio: Uploads &amp; Clean-Up</label>
+<span class="font-label-badge text-label-badge text-on-surface-variant">Bed-sheet to E-Commerce Studio in 1-Click</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+<!-- Slot 1: Messy photo with AI cleanup overlay -->
+<div class="relative rounded-xl overflow-hidden aspect-square bg-surface-container-high group shadow-md">
+<img class="w-full h-full object-cover" data-alt="Emerald green Nigerian luxury silk dress spread on an unmade bed with natural sunlight from an open window, commercial fabric shot ready for AI cutout" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDED5zNmGob27upm69PKYZsA5DXQBpggzYr0bSAlBWAXck0jS8upM5ybQZieRyyL95kE93ifzd131HTDRH-ldTQtT4HeKscGPWfzcD2C91T2fQytiEW1p5-96vr6msI6r9nxkhcmdltlLChwX4j_Ted3oWIF-WFmqLpfi5PPxx99CP0NS9kl1oye-nFBFKKjMFXrK2pttG9adweozFFAGHEnttEcb1U3irF8jw544FmfH9_qTNINOJy"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim/90 via-surface-dim/30 to-transparent p-space-xs flex flex-col justify-between">
+<span class="self-start px-2 py-0.5 rounded-full bg-surface-container-lowest/80 text-primary font-label-badge text-label-badge">
+                Raw Photo
+              </span>
+<div class="space-y-1">
+<span class="block font-label-code text-[11px] text-on-surface truncate">Original shot</span>
+<div class="flex flex-wrap gap-1">
+<button class="px-2 py-0.5 rounded bg-primary text-on-primary font-label-badge text-[10px] font-bold">🪄 Magic Clean</button>
+<button class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-label-badge text-[10px]">👗 Swap Model</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Slot 2: Studio Background Applied -->
+<div class="relative rounded-xl overflow-hidden aspect-square bg-surface-container-high group shadow-md">
+<img class="w-full h-full object-cover" data-alt="High-end fashion studio photoshoot of an emerald green satin wrap gown on a luxury mannequin with soft studio lighting and crisp clean backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAknhfKbrK4D2-vFMCJVKGIFx-jrbWGWgeUaqEomhfxXpzxMUMjJsVENc8eYUlzstDI9DumjG4g3n4L8QprbJwEcfdWatTTQ1rO1zoiM7kw8B6TL9Vy8XY2GQBAu227mWKrO-MDk3rL9tVJgYJZtChL4dtJ_u_OWHtZG8mZlPfu5zeG6NFTsxATgbKkfhRDuGuXocU4kizou10ssBDkeeFyEsDoigFvYeohUrXY15y_m2mB7_cm2XZH"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim/90 via-surface-dim/20 to-transparent p-space-xs flex flex-col justify-between">
+<span class="self-start px-2 py-0.5 rounded-full bg-primary-container text-on-primary-container font-label-badge text-label-badge font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-body-sm">check_circle</span> Studio Applied
+              </span>
+<div class="space-y-1">
+<span class="block font-label-code text-[11px] text-on-surface">Balogun Studio AI</span>
+<span class="font-label-badge text-primary text-[10px] block">High Contrast HD</span>
+</div>
+</div>
+</div>
+<!-- Slot 3: Add Angle Placeholder -->
+<div class="rounded-xl border-2 border-dashed border-outline/30 aspect-square flex flex-col items-center justify-center p-space-sm text-center hover:bg-surface-container/50 transition-colors cursor-pointer group">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface-variant group-hover:text-primary transition-colors mb-2">
+<span class="material-symbols-outlined text-headline-sm">add_photo_alternate</span>
+</div>
+<span class="font-title-md text-body-sm text-on-surface font-semibold">+ Add Side / Video Angle</span>
+<span class="font-label-code text-[11px] text-on-surface-variant mt-1">Dropshadow &amp; watermarking auto-applied</span>
+</div>
+</div>
+</div>
+<!-- AI Copy Generator Module with Naija Vibe Switch -->
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-title-md text-body-md text-on-surface font-semibold">AI Caption &amp; Catalog Description</label>
+<div class="flex items-center gap-1 bg-surface-container-highest p-0.5 rounded-lg">
+<button class="px-2.5 py-1 rounded-md text-on-surface-variant font-label-badge text-label-badge transition-all" id="tone-english">English</button>
+<button class="px-2.5 py-1 rounded-md bg-primary text-on-primary font-label-badge text-label-badge font-bold shadow-sm transition-all" id="tone-pidgin">Naija Street 🔥</button>
+</div>
+</div>
+<div class="relative">
+<textarea class="w-full rounded-xl bg-surface-container-highest/60 p-space-sm font-label-code text-body-sm text-on-surface outline-none focus:ring-1 focus:ring-primary shadow-inner resize-none" id="caption-box" rows="3">E choke! Pure raw emerald silk wrap dress no cap 🔥! Fit for owambe, church, or dinner date with boo. Size 10-14 available. Price: ₦24,500 only. We dey dispatch same day to Island &amp; Mainland via verified rider. Send DM to grab yours before e finish!</textarea>
+<button class="absolute right-2 bottom-2 px-2 py-1 rounded bg-surface-container-high text-primary hover:bg-surface-bright font-label-code text-[11px] flex items-center gap-1">
+<span class="material-symbols-outlined text-body-sm">sync</span> Re-Generate
+          </button>
+</div>
+</div>
+<!-- Final Action Strip -->
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-code text-label-code text-on-surface-variant">Price:</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">₦24,500</span>
+<span class="font-label-badge text-label-badge text-on-surface-variant">(Qty: 5)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-sm py-2 rounded-xl bg-surface-container-high text-on-surface font-title-md text-body-sm font-semibold hover:bg-surface-container-highest transition-colors">
+            Save Draft
+          </button>
+<button class="px-space-lg py-2 rounded-xl bg-primary text-on-primary font-title-md text-body-sm font-bold hover:bg-primary-fixed-dim transition-all shadow-[0_0_24px_rgba(78,222,163,0.3)] flex items-center gap-1">
+<span class="material-symbols-outlined text-body-md">publish</span>
+            Publish to WhatsApp &amp; IG
+          </button>
+</div>
+</div>
+</section>
+</div>
+<!-- ORDER DISPATCH & CBN ESCROW LEDGER TABLE -->
+<section class="rounded-xl bg-surface-container-low shadow-xl p-space-lg space-y-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Live Orders &amp; Escrow Dispatch Vault</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Real-time payment confirmation and rider milestone tracking</p>
+</div>
+<div class="flex items-center gap-space-xs">
+<div class="relative">
+<input class="px-space-sm py-1.5 pl-8 rounded-lg bg-surface-container font-label-code text-body-sm text-on-surface outline-none focus:ring-1 focus:ring-primary w-48 sm:w-64" placeholder="Search order ID or phone..." type="text"/>
+<span class="material-symbols-outlined text-on-surface-variant text-body-sm absolute left-2.5 top-2">search</span>
+</div>
+<button class="p-1.5 rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface">
+<span class="material-symbols-outlined text-body-lg">filter_list</span>
+</button>
+</div>
+</div>
+<!-- Table Container -->
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-sm text-body-sm text-on-surface">
+<thead class="font-label-badge text-label-badge text-on-surface-variant uppercase bg-surface-container-lowest/60">
+<tr>
+<th class="py-space-sm px-space-md rounded-l-lg">Order ID</th>
+<th class="py-space-sm px-space-md">Buyer Handle</th>
+<th class="py-space-sm px-space-md">Product Items</th>
+<th class="py-space-sm px-space-md">Escrow Status</th>
+<th class="py-space-sm px-space-md">Logistics &amp; OTP</th>
+<th class="py-space-sm px-space-md text-right rounded-r-lg">Action</th>
+</tr>
+</thead>
+<tbody class="space-y-1">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container/60 transition-colors">
+<td class="py-space-md px-space-md font-label-code text-label-code font-bold text-primary">#ORD-9821</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-secondary-container/40 flex items-center justify-center text-secondary text-xs font-bold">K</div>
+<div>
+<p class="font-semibold text-on-surface">@Kemi_Lagos</p>
+<span class="font-label-badge text-label-badge text-on-surface-variant">Ikeja GRA</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<p class="text-on-surface font-medium">Emerald Silk Wrap (M)</p>
+<span class="text-on-surface-variant text-xs">Qty: 1 • Color: Forest</span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-space-xs py-1 rounded-full bg-primary/15 text-primary font-label-code text-label-code font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                ₦26,700 Confirmed
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-body-md">two_wheeler</span>
+<div>
+<p class="font-semibold text-on-surface text-xs">Rider Ibrahim (Fez)</p>
+<span class="font-label-code text-label-code text-tertiary">OTP: 7402</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="px-space-xs py-1 rounded bg-primary text-on-primary font-label-badge text-label-badge font-bold hover:bg-primary-fixed-dim">Waybill</button>
+<button class="p-1 rounded bg-surface-container text-on-surface-variant hover:text-on-surface">
+<span class="material-symbols-outlined text-body-sm">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container/60 transition-colors">
+<td class="py-space-md px-space-md font-label-code text-label-code font-bold text-primary">#ORD-9820</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-primary-container/30 flex items-center justify-center text-primary text-xs font-bold">B</div>
+<div>
+<p class="font-semibold text-on-surface">Bimbo Ade</p>
+<span class="font-label-badge text-label-badge text-on-surface-variant">WhatsApp Direct</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<p class="text-on-surface font-medium">Ankara Silk Crepe x2</p>
+<span class="text-on-surface-variant text-xs">Qty: 2 yards</span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-space-xs py-1 rounded-full bg-secondary-container/20 text-secondary-fixed-dim font-label-code text-label-code font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed-dim animate-pulse"></span>
+                ₦42,000 Verifying
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-label-badge text-label-badge text-on-surface-variant bg-surface-container-high px-2 py-1 rounded">Awaiting Rider Assignment</span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<button class="px-space-xs py-1 rounded bg-secondary-container text-on-secondary-container font-label-badge text-label-badge font-bold hover:opacity-90">Verify Bank Slip</button>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container/60 transition-colors">
+<td class="py-space-md px-space-md font-label-code text-label-code font-bold text-primary">#ORD-9818</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-tertiary-container/30 flex items-center justify-center text-tertiary text-xs font-bold">C</div>
+<div>
+<p class="font-semibold text-on-surface">Chidinma O.</p>
+<span class="font-label-badge text-label-badge text-on-surface-variant">Lekki Phase 1</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<p class="text-on-surface font-medium">Gold Beaded Headtie</p>
+<span class="text-on-surface-variant text-xs">Aso-Ebi special</span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-space-xs py-1 rounded-full bg-primary/20 text-primary font-label-code text-label-code font-semibold">
+<span class="material-symbols-outlined text-body-sm">done_all</span>
+                ₦18,500 Payout Ready
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-body-md">check_circle</span>
+<span class="font-label-badge text-label-badge text-on-surface">Delivered (OTP Verified)</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right">
+<button class="px-space-xs py-1 rounded bg-surface-container-high text-on-surface font-label-badge text-label-badge hover:bg-surface-container-highest">Print Receipt</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- DEDICATED 10-TOOL AI TOOLKIT MATRIX -->
+<section class="space-y-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-headline-sm text-primary">psychology</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">10-Engine AI Toolkit Matrix</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tailored automation suites engineered specifically for West African commerce</p>
+</div>
+<span class="font-label-badge text-label-badge text-primary bg-primary/10 px-3 py-1 rounded-full font-semibold">
+        10 / 10 Engines Operational
+      </span>
+</div>
+<!-- Group 1: Visual Suite (2 tools) -->
+<div class="space-y-space-xs">
+<h3 class="font-label-badge text-label-badge uppercase tracking-wider text-on-surface-variant font-bold">
+        Category I: Visual &amp; Security Suite
+      </h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Tool 01 -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-md hover:bg-surface-container transition-all flex flex-col justify-between group">
+<div class="flex items-start justify-between">
+<div class="w-10 h-10 rounded-lg bg-primary-container/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-title-md">photo_auto_merge</span>
+</div>
+<span class="font-label-code text-label-code text-on-surface-variant">01 / Visual Studio</span>
+</div>
+<div class="my-space-sm">
+<h4 class="font-title-md text-title-md text-on-surface font-bold">AI Visual Studio</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Transforms messy Balogun stall photos into clean studio shots, automated mannequin cuts, and luxury dropshadows.
+            </p>
+</div>
+<button class="w-full py-1.5 rounded-lg bg-surface-container-high hover:bg-primary hover:text-on-primary text-on-surface font-title-md text-body-sm font-semibold transition-colors flex items-center justify-center gap-1">
+<span>Launch Studio</span>
+<span class="material-symbols-outlined text-body-sm">arrow_forward</span>
+</button>
+</div>
+<!-- Tool 03 -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-md hover:bg-surface-container transition-all flex flex-col justify-between group">
+<div class="flex items-start justify-between">
+<div class="w-10 h-10 rounded-lg bg-error-container/30 flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-title-md">shield_person</span>
+</div>
+<span class="font-label-code text-label-code text-on-surface-variant">03 / Anti-Fraud</span>
+</div>
+<div class="my-space-sm">
+<h4 class="font-title-md text-title-md text-on-surface font-bold">Smart Receipt Shield</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Computer vision engine verifying GTB, OPay, Zenith, and Kuda transfer screenshots against real NIBSS bank switches.
+            </p>
+</div>
+<button class="w-full py-1.5 rounded-lg bg-surface-container-high hover:bg-primary hover:text-on-primary text-on-surface font-title-md text-body-sm font-semibold transition-colors flex items-center justify-center gap-1">
+<span>Verify Receipts</span>
+<span class="material-symbols-outlined text-body-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Group 2: Content & Sales Suite (3 tools) -->
+<div class="space-y-space-xs pt-space-xs">
+<h3 class="font-label-badge text-label-badge uppercase tracking-wider text-on-surface-variant font-bold">
+        Category II: Conversational &amp; Sales Suite
+      </h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Tool 02 -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-md hover:bg-surface-container transition-all flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-title-md">record_voice_over</span>
+</div>
+<span class="font-label-code text-label-code text-on-surface-variant">02 / Voice-to-Store</span>
+</div>
+<div class="my-space-sm">
+<h4 class="font-title-md text-title-md text-on-surface font-bold">Voice-to-Store (Wazobia)</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Speak price, stock, and sizes in Yoruba, Igbo, Hausa, or Pidgin. Auto-converts to clean inventory entries.
+            </p>
+</div>
+<button class="w-full py-1.5 rounded-lg bg-surface-container-high hover:bg-primary hover:text-on-primary text-on-surface font-title-md text-body-sm font-semibold transition-colors">
+            Configure Voice
+          </button>
+</div>
+<!-- Tool 04 -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-md hover:bg-surface-container transition-all flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="w-10 h-10 rounded-lg bg-secondary-container/30 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-title-md">forum</span>
+</div>
+<span class="font-label-code text-label-code text-on-surface-variant">04 / DM Closer</span>
+</div>
+<div class="my-space-sm">
+<h4 class="font-title-md text-title-md text-on-surface font-bold">WhatsApp DM Closer</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Auto-negotiator bot handling price inquiries, sending escrow payment links, and closing sales while you sleep.
+            </p>
+</div>
+<button class="w-full py-1.5 rounded-lg bg-surface-container-high hover:bg-primary hover:text-on-primary text-on-surface font-title-md text-body-sm font-semibold transition-colors">
+            Manage Bot Rules
+          </button>
+</div>
+<!-- Tool 05 -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-md hover:bg-surface-container transition-all flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="w-10 h-10 rounded-lg bg-tertiary-container/30 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-title-md">auto_awesome</span>
+</div>
+<span class="font-label-code text-label-code text-on-surface-variant">05 / Copy Crafter</span>
+</div>
+<div class="my-space-sm">
+<h4 class="font-title-md text-title-md text-on-surface font-bold">AI Copy &amp; Caption Crafter</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              High-converting Instagram captions, WhatsApp Broadcast scripts, and viral hype hooks infused with Naija slang.
+            </p>
+</div>
+<button class="w-full py-1.5 rounded-lg bg-surface-container-high hover:bg-primary hover:text-on-primary text-on-surface font-title-md text-body-sm font-semibold transition-colors">
+            Generate Copy
+          </button>
+</div>
+</div>
+</div>
+<!-- Group 3: Smart Operations Suite (5 tools) -->
+<div class="space-y-space-xs pt-space-xs">
+<h3 class="font-label-badge text-label-badge uppercase tracking-wider text-on-surface-variant font-bold">
+        Category III: Operations, Debt &amp; Market Intelligence
+      </h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-5 gap-space-sm">
+<!-- Tool 06 -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-md hover:bg-surface-container transition-all flex flex-col justify-between">
+<div>
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary mb-space-xs">
+<span class="material-symbols-outlined text-body-lg">query_stats</span>
+</div>
+<h4 class="font-title-md text-body-md text-on-surface font-bold">06. Market Pulse</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 text-xs">
+              Live price scrapers for fabrics across Balogun, Tejuosho &amp; Ariaria.
+            </p>
+</div>
+<span class="font-label-code text-label-code text-primary mt-space-sm block">Active (₦/USD Tracked)</span>
+</div>
+<!-- Tool 07 -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-md hover:bg-surface-container transition-all flex flex-col justify-between">
+<div>
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary mb-space-xs">
+<span class="material-symbols-outlined text-body-lg">inventory_2</span>
+</div>
+<h4 class="font-title-md text-body-md text-on-surface font-bold">07. Restock Predictor</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 text-xs">
+              Anticipates wedding &amp; holiday demand spikes before you run out.
+            </p>
+</div>
+<span class="font-label-code text-label-code text-primary mt-space-sm block">3 Warnings Queued</span>
+</div>
+<!-- Tool 08 -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-md hover:bg-surface-container transition-all flex flex-col justify-between">
+<div>
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary mb-space-xs">
+<span class="material-symbols-outlined text-body-lg">receipt_long</span>
+</div>
+<h4 class="font-title-md text-body-md text-on-surface font-bold">08. Instant Waybill</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 text-xs">
+              Thermal print formatted slips generated in seconds with QR codes.
+            </p>
+</div>
+<span class="font-label-code text-label-code text-on-surface-variant mt-space-sm block">Thermal Ready</span>
+</div>
+<!-- Tool 09 -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-md hover:bg-surface-container transition-all flex flex-col justify-between">
+<div>
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary mb-space-xs">
+<span class="material-symbols-outlined text-body-lg">handshake</span>
+</div>
+<h4 class="font-title-md text-body-md text-on-surface font-bold">09. Alajo Debt AI</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 text-xs">
+              Courteous automated WhatsApp reminders that preserve customer goodwill.
+            </p>
+</div>
+<span class="font-label-code text-label-code text-tertiary mt-space-sm block">₦15,000 Monitored</span>
+</div>
+<!-- Tool 10 -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-md hover:bg-surface-container transition-all flex flex-col justify-between">
+<div>
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary mb-space-xs">
+<span class="material-symbols-outlined text-body-lg">hub</span>
+</div>
+<h4 class="font-title-md text-body-md text-on-surface font-bold">10. Multi-Sync</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 text-xs">
+              Prevents overselling by syncing Instagram DMs, store, and WhatsApp stock.
+            </p>
+</div>
+<span class="font-label-code text-label-code text-primary mt-space-sm block">4 Channels Synced</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  function activateVoiceRecorder() {
+    const textEl = document.getElementById('voice-text');
+    if (textEl) {
+      textEl.classList.add('text-primary');
+      textEl.innerText = "Transcribing Pidgin: 'Amina! Add seven pieces raw lace, gold color, ₦35,000...'";
+      setTimeout(() => {
+        textEl.classList.remove('text-primary');
+      }, 3500);
+    }
+  }
+
+  // Quick tone toggle micro-interaction
+  const toneEnglish = document.getElementById('tone-english');
+  const tonePidgin = document.getElementById('tone-pidgin');
+  const captionBox = document.getElementById('caption-box');
+
+  if (toneEnglish && tonePidgin && captionBox) {
+    toneEnglish.addEventListener('click', () => {
+      toneEnglish.classList.add('bg-primary', 'text-on-primary', 'font-bold');
+      toneEnglish.classList.remove('text-on-surface-variant');
+      tonePidgin.classList.remove('bg-primary', 'text-on-primary', 'font-bold');
+      tonePidgin.classList.add('text-on-surface-variant');
+      captionBox.value = "Exquisite luxury emerald silk wrap gown. Tailored for elevated evening elegance and high-profile functions. Size 10-14 in stock. Price: ₦24,500. Same-day dispatch across Lagos via verified courier. Direct Message to order.";
+    });
+
+    tonePidgin.addEventListener('click', () => {
+      tonePidgin.classList.add('bg-primary', 'text-on-primary', 'font-bold');
+      tonePidgin.classList.remove('text-on-surface-variant');
+      toneEnglish.classList.remove('bg-primary', 'text-on-primary', 'font-bold');
+      toneEnglish.classList.add('text-on-surface-variant');
+      captionBox.value = "E choke! Pure raw emerald silk wrap dress no cap 🔥! Fit for owambe, church, or dinner date with boo. Size 10-14 available. Price: ₦24,500 only. We dey dispatch same day to Island & Mainland via verified rider. Send DM to grab yours before e finish!";
+    });
+  }
+</script></main></div><nav class="lg:hidden fixed bottom-0 left-0 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl z-50 flex items-center justify-around px-space-xs shadow-[0_-1px_8px_rgba(0,0,0,0.06)]" data-active-classes="text-primary font-bold"><a aria-current="page" class="flex flex-col items-center justify-center py-1 px-space-xs transition-colors text-primary font-bold" data-path="dashboard" href="#"><span class="material-symbols-outlined text-title-md">dashboard</span><span class="font-label-badge text-label-badge mt-0.5">Home</span></a><a class="flex flex-col items-center justify-center py-1 px-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="products" href="#"><span class="material-symbols-outlined text-title-md">inventory_2</span><span class="font-label-badge text-label-badge mt-0.5">Products</span></a><a class="flex flex-col items-center justify-center py-1 px-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="orders" href="#"><span class="material-symbols-outlined text-title-md">local_shipping</span><span class="font-label-badge text-label-badge mt-0.5">Orders</span></a><a class="flex flex-col items-center justify-center py-1 px-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="ai-toolkit" href="#"><div class="relative"><span class="material-symbols-outlined text-title-md text-primary">psychology</span><span class="absolute -top-1 -right-2 px-1 rounded-full bg-primary-container text-on-primary-container text-[9px] font-bold">10</span></div><span class="font-label-badge text-label-badge mt-0.5">AI Tools</span></a><a class="flex flex-col items-center justify-center py-1 px-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="wallet-and-escrow" href="#"><span class="material-symbols-outlined text-title-md">account_balance_wallet</span><span class="font-label-badge text-label-badge mt-0.5">Escrow</span></a></nav></body></html>
